@@ -1,0 +1,182 @@
+curation:
+  process:
+    - role: curator
+      name: Johannes Hermann
+      orcid: test
+      date: '2025-03-04'
+experimental:
+  tags:
+    - null
+  instrumentation:
+    - type: potentiostat
+      manufacturer: null
+      model: null
+  description: null
+source:
+  url: null
+  citation key: null
+  techniques:
+    - CV
+  figure: null
+  curve: null
+system:
+  type: electrochemical
+  electrolyte:
+    type: aqueous
+    components:
+      - name: Name
+        concentration:
+          value: 1
+          unit: mol / l
+        type: null
+        source:
+          supplier: null
+          LOT: null
+          purity:
+            grade: 5N
+            total organic carbon:
+              value: 3
+              unit: ppb
+            total ion conductivity:
+              value: 18
+              unit: MOhm cm
+        purity:
+          refinement: Thorough cleaning.
+          grade: 6N
+          total organic carbon:
+            value: 3
+            unit: ppb
+          container: new name
+          internal LOT: Number
+          url: null
+        partial pressure:
+          unit: 1
+          value: bar
+        proportion:
+          value: 100
+          unit: volume percent
+        flow:
+          value: null
+          unit: null
+        comment: Nothing special.
+      - name: NaCl
+        concentration:
+          value: 0.1
+          unit: mol / l
+        type: salt
+        source:
+          supplier: Supplier name
+          LOT: '654654'
+        purity:
+          grade: 5N
+      - name: water
+        type: solvent
+        proportion:
+          value: 50
+          unit: volume percent
+        source:
+          refinement: Sartorius Arium 611UV
+        purity:
+          grade: ultrapure water
+          total organic carbon:
+            value: 3
+            unit: ppb
+      - name: ethanol
+        type: solvent
+        proportion:
+          value: 50
+          unit: volume percent
+        purity:
+          grade: analytical grade
+      - name: H2SO4
+        type: acid
+        source:
+          supplier: Supplier name
+          LOT: C45456
+        concentration:
+          value: 0.1
+          unit: mol / l
+      - name: N2
+        type: gas
+        purity:
+          grade: N5.0
+        partial pressure:
+          unit: 1
+          value: bar
+        proportion:
+          value: 100
+        flow:
+          value: null
+          unit: null
+    ph:
+      value: 13
+      uncertainty: 0.1
+    temperature:
+      value: 298.15
+      unit: K
+  electrodes:
+    - name: RHE
+      function: reference electrode
+      redox system: RHE
+      source:
+        manufacturer: SI Analytics
+        model: MSE Shott
+        url: http://some.url.to.a.pdf.html
+      description: Home made RHE.
+      material: Pt
+      type: wire
+      shape:
+        description: Description of the shape.
+    - name: CE
+      function: counter electrode
+      material: Pt
+      type: wire
+      shape:
+        length:
+          value: 4
+          unit: mm
+        diameter:
+          value: 4
+          unit: mm
+      crystallographic orientation: poly
+      geometric electrolyte contact area:
+        value: null
+        unit: cm-2
+    - name: WE
+      function: working electrode
+      type: single crystal
+      material: Ni
+      crystallographic orientation: '111'
+      source:
+        manufacturer: Company name
+        LOT: 145823A
+        purity:
+          grade: 5N
+      shape:
+        type: cylinder
+        height:
+          value: 4
+          unit: mm
+        diameter:
+          value: 4
+          unit: mm
+      geometric electrolyte contact area:
+        value: 1
+        unit: cm-2
+      preparation procedure:
+        description:
+          - Description step 1.
+          - Description Step 2.
+          - ...
+        url: https://www.preparation.html
+  electrochemical cell:
+    type: glass electrolysis cell
+    components:
+      - name: glass
+        part: cell
+      - name: nafion
+        part: membrane
+    cell description: A classical electrochemical cell.
+    cleaning procedure: Storing in highly concentrated KOH and boiling in Milli-Q water.
+    source:
+      url: https://doi.org/doi
