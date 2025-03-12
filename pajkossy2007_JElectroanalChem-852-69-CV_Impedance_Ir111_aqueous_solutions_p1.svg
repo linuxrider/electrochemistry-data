@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<svg width="4959" height="6617" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
+
+ <g class="layer" id="image-layer">
+  <title>image-layer</title>
+  <image height="6617" id="svg_1" width="4959" x="0" xlink:href="pajkossy2007_JElectroanalChem-852-69-CV_Impedance_Ir111_aqueous_solutions_p1.png" y="0"/>
+ </g>
+ <g class="layer" id="digitization-layer">
+  <title>digitization-layer</title>
+  <g id="svg_10" transform="matrix(1 0 0 1 0 0)">
+   <text fill="#ff0000" font-family="Serif" font-size="60" id="svg_2" stroke="#000000" stroke-width="0" text-anchor="middle" x="2641.89" xml:space="preserve" y="859.55">j2 = 200 uA / cm2</text>
+   <line fill="#ff0000" id="svg_5" stroke="#000000" stroke-width="5" x1="3076.46" x2="2878.89" y1="625.29" y2="838.34"/>
+  </g>
+  <g id="svg_11">
+   <text fill="#ff0000" font-family="Serif" font-size="60" id="svg_3" stroke="#000000" stroke-width="0" text-anchor="middle" x="2637.6" xml:space="preserve" y="1923.1">j1 = -200 uA / cm2</text>
+   <line fill="#ff0000" id="svg_4" stroke="#000000" stroke-width="5" x1="3075.41" x2="2882.25" y1="1980.05" y2="1908.6"/>
+  </g>
+  <g id="svg_12">
+   <text fill="#ff0000" font-family="Serif" font-size="60" id="svg_6" stroke="#000000" stroke-width="0" style="cursor: move;" text-anchor="middle" x="3075.73" xml:space="preserve" y="2208.14">E1 = -4 V vs SCE</text>
+   <line fill="#ff0000" id="svg_9" stroke="#000000" stroke-width="5" x1="3291.71" x2="3178.8" y1="2167.93" y2="1987.28"/>
+  </g>
+  <g id="svg_13">
+   <text fill="#ff0000" font-family="Serif" font-size="60" id="svg_7" stroke="#000000" stroke-width="0" text-anchor="middle" x="4516.92" xml:space="preserve" y="2258.87">E1 = -4 V vs SCE</text>
+   <line fill="#ff0000" id="svg_8" stroke="#000000" stroke-width="5" x1="4275.61" x2="4440.13" y1="2245.88" y2="1981.37"/>
+  </g>
+  <g id="svg_17">
+   <path d="m3330.5,1098.24c2.73,0 9.11,-31.68 21.52,-34.41c12.41,-2.72 14.9,39.45 55.54,51.18c40.64,11.73 59.24,-17 66.5,-19.69c7.26,-2.69 11.47,1.65 19.89,2.8c8.42,1.15 8.78,-0.05 20.27,-0.44c11.49,-0.39 27.57,34.56 27.53,34.18c-0.04,-0.39 21.42,60.93 34.07,81.32c12.65,20.38 38.26,44.8 68.41,56.32c30.15,11.52 23.84,14.73 130.49,15c106.65,0.27 100.94,1.66 150.55,-4.28c49.61,-5.94 161.48,-13.58 187.91,-20.88c26.43,-7.3 82.58,-4.83 100,-109.89c17.42,-105.06 24.4,-160.76 31.03,-160.44c6.63,0.32 26.64,110.07 40.09,142.21c13.45,32.14 40.21,38.33 48.66,39.11c8.45,0.78 -1.14,111.2 -3.15,136.98c-2.01,25.78 -16.83,39.51 -32.02,49.83c-15.19,10.32 -13.5,6.5 -40.05,26.37c-26.55,19.87 -36.95,208.16 -46.68,207.12c-9.73,-1.04 -18.42,-160.25 -36.34,-204.93c-17.92,-44.68 -40.71,-47.5 -73.63,-49.45c-32.92,-1.95 -56.98,-2.95 -156.95,-5.42c-99.97,-2.47 -154.37,-0.23 -202.39,3.22c-48.02,3.45 -97.07,11.86 -139.18,35.31c-42.11,23.45 -65.43,92.43 -82.08,122.24c-16.65,29.81 -29.99,37.13 -40.28,36.95c-10.29,-0.19 -10.78,-18.73 -21.98,-25.27c-11.2,-6.55 -55.9,30.83 -62.87,58.24c-6.96,27.41 -22.27,36.47 -30.79,74.97c-8.52,38.49 -11.16,69.14 -17.33,94.26c-6.17,25.12 -3.99,46.46 -10.34,47.14c-6.35,0.68 -6.38,-45.54 -12.73,-47.14c-6.35,-1.59 -5.74,29.22 -8.91,28.08c-3.17,-1.14 2.57,-471.67 3.41,-532.47c0.85,-60.8 12.72,-108.36 10.91,-120.35" fill="none" id="svg_14" stroke="#ff0000" stroke-width="5"/>
+   <text fill="#000000" font-family="Serif" font-size="60" id="svg_16" stroke="#ff0000" stroke-width="0" text-anchor="middle" x="3638.3" xml:space="preserve" y="1038.48">curve: ph1</text>
+  </g>
+ </g>
+</svg>
