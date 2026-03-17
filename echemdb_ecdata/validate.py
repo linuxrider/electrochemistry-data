@@ -25,6 +25,10 @@ Validate input filenames for source data against the YAML metadata::
 
     >>> validate_source_data_input("literature/source_data")  # doctest: +SKIP
 
+Validate only newly added entries compared to a base branch::
+
+    >>> validate_new_input(base_ref="origin/main")  # doctest: +SKIP
+
 """
 
 # ********************************************************************
@@ -570,6 +574,65 @@ def validate_identifiers():
 
     print()
     print("All validations passed.")
+
+
+def validate_new_input(base_ref="origin/main"):
+    r"""
+    Validate only newly added entries in ``literature/`` compared to a base branch.
+
+    Uses ``git diff`` to find directories added in the current branch relative
+    to ``base_ref``, then runs schema and filename validation on those directories only.
+
+    Also validates the bibliography (cross-cutting, cannot be scoped to new entries).
+
+    Parameters
+    ----------
+    base_ref : str
+        The git reference to compare against, e.g., ``origin/main``.
+
+    EXAMPLES::
+
+        >>> validate_new_input(base_ref="origin/main")  # doctest: +SKIP
+
+    """
+    result = subprocess.run(
+        ["git", "diff", "--name-only", "--diff-filter=A", f"{base_ref}...HEAD"],
+        capture_output=True,
+        text=True,
+        check=True,
+    )
+    added_files = result.stdout.splitlines()
+
+    def _new_dirs(prefix):
+        dirs = set()
+        for f in added_files:
+            parts = Path(f).parts
+            if len(parts) >= 3 and f.startswith(prefix):
+                dirs.add(str(Path(parts[0]) / parts[1] / parts[2]))
+        return sorted(dirs)
+
+    svg_dirs = _new_dirs("literature/svgdigitizer/")
+    src_dirs = _new_dirs("literature/source_data/")
+
+    if not svg_dirs and not src_dirs:
+        print("No new literature entries found.")
+        return
+
+    for data_dir in svg_dirs:
+        print(f"\nValidating {data_dir} ...")
+        validate_schema(data_dir, "svgdigitizer")
+        validate_svgdigitizer_input(data_dir)
+
+    for data_dir in src_dirs:
+        print(f"\nValidating {data_dir} ...")
+        validate_schema(data_dir, "source_data")
+        validate_source_data_input(data_dir)
+
+    from echemdb_ecdata.bibliography import validate_bib_keys, validate_bib_utf8
+
+    print("\nValidating bibliography...")
+    validate_bib_keys()
+    validate_bib_utf8()
 
 
 def _lowercase_svg_labels(svg_path):
