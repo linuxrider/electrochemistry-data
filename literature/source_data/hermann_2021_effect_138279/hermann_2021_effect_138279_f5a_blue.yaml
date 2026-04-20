@@ -10,6 +10,9 @@ system:
     components:
       - name: water
         type: solvent
+        chemicalIdentifiers:
+          cas: 7732-18-5
+          smiles: O
         proportion:
           value: 100
           unit: volume percent
@@ -36,7 +39,8 @@ system:
         source:
           supplier: Merck Suprapur
         chemicalIdentifiers:
-          cas:  64-18-6
+          cas: 64-18-6
+          smiles: OC(=O)C
         concentration:
           value: 0.1
           unit: mol L⁻¹
@@ -66,7 +70,7 @@ system:
         grade: 5N
       geometricElectrolyteContactArea:
         value: 0.1241
-        unit: cm⁻²
+        unit: cm²
       shape:
         type: cylinder
         height:
@@ -92,9 +96,12 @@ experimental:
 figureDescription:
   type: raw
   measurementType: CV
+  scanRate:
+    value: 10
+    unit: mV / s
 dataDescription:
   dialect:
-    delimiters: '\t'
+    delimiters: "\t"
     decimal: '.'
     encoding: utf-8-sig
     headerLines: 0
@@ -105,10 +112,10 @@ dataDescription:
     WE(1).Current (A): I
     Scan: cycle
   fieldUnits:
-    - name: Time (s)
+    - name: t
       unit: s
-    - name: WE(1).Potential (V)
+    - name: E
       unit: V
       reference: MSE-sat.
-    - name: WE(1).Current (A)
+    - name: I
       unit: A
