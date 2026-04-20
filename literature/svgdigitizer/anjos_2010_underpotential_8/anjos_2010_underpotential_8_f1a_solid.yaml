@@ -9,8 +9,6 @@ source:
   citationKey: anjos_2010_underpotential_8
   techniques:
   - CV
-  figure: 1a
-  curve: solid
 system:
   type: electrochemical
   electrolyte:
