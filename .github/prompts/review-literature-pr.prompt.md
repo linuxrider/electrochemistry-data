@@ -202,6 +202,23 @@ for confirmation**, then:
 
 **Important:** Always ask the reviewer before committing, pushing, or posting.
 
+### Step 8: Ensure News File Exists
+
+Every PR must include a news file in `doc/news/`. Check if one exists; if not,
+create it based on `doc/news/TEMPLATE.rst`.
+
+- **Naming**: Use the identifier or a short descriptive slug, e.g.,
+  `doc/news/{identifier}.rst` or `doc/news/add-{identifier}.rst`
+- **Content**: Fill in the `**Added:**` section with a brief description of the
+  figures/data added, e.g.:
+  ```rst
+  **Added:**
+
+  * Added figure 2 from Hirai et al., 2000.
+  ```
+- **Check**: Verify the file exists before committing. If missing, create it and
+  include it in the commit.
+
 ## Key References
 
 - PR checklist: `.github/pull_request_template.md`
