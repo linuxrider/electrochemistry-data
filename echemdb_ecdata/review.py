@@ -766,6 +766,12 @@ def generate_review_report(report, entry_dir, yaml_data=None, pdf_text=None):
                 lines.append(f"- [ ] {msg} **(see issue above)**")
         lines.append("")
 
+    # Curator Notes placeholder
+    lines.append("## Curator Notes")
+    lines.append("")
+    lines.append("> (Optional) Add any general notes, context, or observations here.")
+    lines.append("")
+
     return "\n".join(lines)
 
 
