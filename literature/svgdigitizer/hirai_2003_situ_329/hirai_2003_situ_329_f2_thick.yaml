@@ -25,7 +25,7 @@ system:
           unit: mmol / l
         source:
           supplier: Wako
-          grade: Superior
+          quality: Superior
     temperature:
       value: rt
   electrodes:
