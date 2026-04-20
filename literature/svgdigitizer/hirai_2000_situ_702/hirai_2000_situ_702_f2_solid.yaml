@@ -6,7 +6,7 @@ curation:
       date: 2026-01-21
 source:
   url: https://doi.org/10.2355/isijinternational.40.702
-  citationKey: hirai_2000_in_702
+  citationKey: hirai_2000_situ_702
   techniques:
   - CV
 system:
@@ -25,6 +25,8 @@ system:
           unit: mol / l
         source:
           supplier: Wako
+        purity:
+          grade: Superior
     ph:
       value: 6.5
   electrodes:
@@ -36,6 +38,8 @@ system:
       type: Fe single crystal rod
       material: Fe
       crystallographicOrientation: '110'
+      source:
+        manufacturer: Monocrystal
       purity:
          grade: "99.9"
          unit: pct
