@@ -13,20 +13,22 @@ Use this skill when:
 
 ## Review Process
 
-### Step 1: Identify Changed Entries
-
-Run `git diff main --name-only` to find new/modified files. Focus on directories under:
-- `literature/svgdigitizer/{identifier}/` — SVG-digitized data
-- `literature/source_data/{identifier}/` — Raw experimental data
-- `literature/bibliography/bibliography.bib` — Bibliography entries
-
-### Step 2: Run Automated Validation
+### Step 1: Run Input Validation First
 
 ```bash
 pixi run -e dev validate-input
 ```
 
-This runs schema validation, filename checks, identifier matching, and bib key validation. Report any failures.
+This is the first thing to run. It performs schema validation, filename checks,
+identifier matching, and bib key validation across all input files. Any failures
+here are critical and must be resolved before proceeding. Report all errors.
+
+### Step 2: Identify Changed Entries
+
+Run `git diff main --name-only` to find new/modified files. Focus on directories under:
+- `literature/svgdigitizer/{identifier}/` — SVG-digitized data
+- `literature/source_data/{identifier}/` — Raw experimental data
+- `literature/bibliography/bibliography.bib` — Bibliography entries
 
 ### Step 3: Run the Review Module
 
@@ -78,49 +80,90 @@ The review module downloads the paper via DOI and extracts text to verify:
 - Purity/grade info matches
 - Supplier names match
 
-### Step 4: Manual Cross-Checks (Agent Should Verify)
+### Step 4: Manual Cross-Checks and Enrichment (Agent MUST Do)
 
-After automated checks, the agent should additionally verify by reading the PDF text:
+After automated checks, the agent MUST read the PDF text and add findings as
+numbered actionable items in the REVIEW.md. Each finding gets the same decision
+box format (accept / reject / comment) so the reviewer can decide.
 
-1. **Figure identification**: Confirm the figure number in the SVG/YAML matches the actual figure in the paper
-2. **Axis units**: Confirm the axis units in the SVG match those in the paper's figure
-3. **Experimental conditions**: Spot-check that temperature, pH, and concentrations are correctly transcribed
-4. **Electrode preparation**: Verify preparation procedure description matches the paper
-5. **Comments**: Verify any comments are complete sentences ending with a period
+Key checks to perform by reading the PDF experimental section:
+
+1. **Missing metadata from PDF**: Compare PDF experimental section against YAML fields.
+   Look for manufacturer/supplier names, purity grades, preparation details that
+   are in the paper but missing from the YAML. Add as ENRICHMENT items with
+   proposed YAML additions.
+2. **Axis units and potential range**: Confirm SVG axis values match the paper's
+   figure description. Add as VERIFY item.
+3. **Spelling consistency**: Check that chemical names, brand names, and technical
+   terms in the YAML match common/correct spelling (e.g., `Milli-Q` vs `MilliQ`).
+   Add as VERIFY item.
+4. **Counter/auxiliary electrode**: Check if the paper mentions a CE. If not, note
+   that its omission is acceptable. Add as VERIFY item.
+5. **Preparation procedure**: Verify the description matches the paper. Check
+   that comments are complete sentences ending with a period.
 
 ### Step 5: Generate REVIEW.md Report
 
-Generate a structured review report with actionable decision boxes:
+Generate `REVIEW.md` at the **repository root** (not inside the entry directory).
+This file is listed in `.gitignore` and must not be committed.
 
-```python
-from echemdb_ecdata.review import write_review_report
-path = write_review_report("literature/svgdigitizer/{identifier}")
+The report has two sections:
+
+**Section 1 — Actionable Issues** (numbered, each with decision boxes):
+
+Each issue follows this format:
+```markdown
+## {N}. {title} ({severity})
+
+**Category:** {category}
+
+**Evidence from PDF:** *"quoted text from paper"*
+
+{Explanation and comparison with established entries}
+
+**Proposed fix:** {code block or description}
+
+**Decision:**
+- [ ] accept
+- [ ] reject
+- [ ] comment
+
+**Reviewer notes:**
+> 
 ```
 
-This creates a `REVIEW.md` in the entry directory with:
-- Numbered issues (errors/warnings), each with:
-  - Finding description and category
-  - Proposed fix command (e.g., `pixi run -e dev rename-identifiers`)
-  - Decision checkboxes: `accept`, `reject`, `comment`
-  - Space for reviewer notes
-- Summary checklist of all automated checks
+Severity levels:
+- **ERROR** — must be fixed for validation to pass
+- **ENRICHMENT** — metadata present in PDF but missing from YAML (optional but recommended)
+- **VERIFY** — needs human judgment, no automated fix
+
+**Section 2 — Automated Checks Summary** (checklist of all passing/failing checks).
+
+Generate the report using:
+```python
+from echemdb_ecdata.review import review_entry, write_review_report
+path = write_review_report("literature/svgdigitizer/{identifier}", output_path="REVIEW.md")
+```
+
+This writes to the repo root. Then manually append the Step 4 findings as additional numbered items.
 
 ### Step 6: Review Decisions and Apply Fixes
 
-After the reviewer marks decisions in REVIEW.md:
+After the reviewer marks decisions in REVIEW.md, read it back and apply accepted fixes:
 
 ```python
 from echemdb_ecdata.review import parse_review_report
-issues = parse_review_report("literature/svgdigitizer/{identifier}/REVIEW.md")
+issues = parse_review_report("REVIEW.md")
 for issue in issues:
-    if issue["decision"] == "accept" and issue["fix_command"]:
-        # Apply the fix command
-        print(f"Applying: {issue['fix_command']}")
+    if issue["decision"] == "accept":
+        # Apply the proposed fix (rename command, YAML edit, etc.)
+        pass
 ```
 
 Each parsed issue returns: `number`, `title`, `category`, `decision`, `notes`, `fix_command`.
 
-**Important:** REVIEW.md files are internal artifacts — do not commit them to the repository.
+**Important:** REVIEW.md is saved at the repo root and listed in `.gitignore`.
+Do not commit it — it is an internal review artifact.
 
 ## Key References
 

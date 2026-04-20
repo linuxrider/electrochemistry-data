@@ -861,7 +861,7 @@ def parse_review_report(report_path):
     return issues
 
 
-def write_review_report(entry_dir, base_branch="main"):
+def write_review_report(entry_dir, base_branch="main", output_path=None):
     r"""
     Run the review for an entry and write the REVIEW.md report file.
 
@@ -871,6 +871,9 @@ def write_review_report(entry_dir, base_branch="main"):
         Path to the entry directory.
     base_branch : str
         Branch to compare against (default: ``main``).
+    output_path : str or Path, optional
+        Path to write the report to. Defaults to ``REVIEW.md`` in the
+        repository root (current working directory).
 
     Returns
     -------
@@ -880,7 +883,7 @@ def write_review_report(entry_dir, base_branch="main"):
     entry_dir = Path(entry_dir)
     report = review_entry(entry_dir)
     md = generate_review_report(report, entry_dir)
-    report_path = entry_dir / "REVIEW.md"
+    report_path = Path(output_path) if output_path else Path("REVIEW.md")
     report_path.write_text(md, encoding="utf-8")
     logger.info("Review report written to %s", report_path)
     return report_path
