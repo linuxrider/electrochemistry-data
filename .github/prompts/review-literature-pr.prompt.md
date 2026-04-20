@@ -88,34 +88,39 @@ After automated checks, the agent should additionally verify by reading the PDF 
 4. **Electrode preparation**: Verify preparation procedure description matches the paper
 5. **Comments**: Verify any comments are complete sentences ending with a period
 
-### Step 5: Report Findings
+### Step 5: Generate REVIEW.md Report
 
-Format the review as:
+Generate a structured review report with actionable decision boxes:
 
-```markdown
-## Literature Review: {identifier}
-
-### Automated Validation
-- [ ] `validate-input` passes
-- [ ] Schema validation passes
-
-### Filename Checks
-- [x] All lowercase
-- [x] Pattern matches
-...
-
-### PDF Cross-Validation
-- [x] Electrolyte components verified
-- [x] Concentrations match
-...
-
-### Manual Verification Notes
-- {Any discrepancies found by reading the PDF}
-
-### Summary
-{errors} errors, {warnings} warnings
-{Recommended actions}
+```python
+from echemdb_ecdata.review import write_review_report
+path = write_review_report("literature/svgdigitizer/{identifier}")
 ```
+
+This creates a `REVIEW.md` in the entry directory with:
+- Numbered issues (errors/warnings), each with:
+  - Finding description and category
+  - Proposed fix command (e.g., `pixi run -e dev rename-identifiers`)
+  - Decision checkboxes: `accept`, `reject`, `comment`
+  - Space for reviewer notes
+- Summary checklist of all automated checks
+
+### Step 6: Review Decisions and Apply Fixes
+
+After the reviewer marks decisions in REVIEW.md:
+
+```python
+from echemdb_ecdata.review import parse_review_report
+issues = parse_review_report("literature/svgdigitizer/{identifier}/REVIEW.md")
+for issue in issues:
+    if issue["decision"] == "accept" and issue["fix_command"]:
+        # Apply the fix command
+        print(f"Applying: {issue['fix_command']}")
+```
+
+Each parsed issue returns: `number`, `title`, `category`, `decision`, `notes`, `fix_command`.
+
+**Important:** REVIEW.md files are internal artifacts — do not commit them to the repository.
 
 ## Key References
 

@@ -651,6 +651,241 @@ def format_report(report):
     return "\n".join(lines)
 
 
+def generate_review_report(report, entry_dir, yaml_data=None, pdf_text=None):
+    r"""
+    Generate a Markdown review report with actionable decision boxes.
+
+    Each issue (ERROR or WARNING) gets a numbered section with:
+    - Finding description
+    - Proposed fix (with concrete code/command)
+    - Decision checkboxes: ``accept``, ``reject``, ``comment``
+    - Space for reviewer notes
+
+    Passing checks are listed as a summary checklist at the end.
+
+    Parameters
+    ----------
+    report : dict
+        Report dictionary from :func:`review_entry`.
+    entry_dir : str or Path
+        Path to the entry directory.
+    yaml_data : dict or None
+        Parsed YAML data. If None, loaded from the first YAML file.
+    pdf_text : dict or None
+        Extracted PDF text for context snippets.
+
+    Returns
+    -------
+    str
+        Markdown report content.
+    """
+    entry_dir = Path(entry_dir)
+    dir_name = entry_dir.name
+
+    if yaml_data is None:
+        yaml_files = sorted(entry_dir.glob("*.yaml"))
+        if yaml_files:
+            yaml_data = _load_yaml(yaml_files[0])
+        else:
+            yaml_data = {}
+
+    doi_url = yaml_data.get("source", {}).get("url", "")
+    lines = []
+
+    # Header
+    lines.append(f"# Review Report: `{dir_name}`")
+    lines.append("")
+    lines.append(f"> **Entry:** `{entry_dir}`")
+    lines.append(f"> **DOI:** {doi_url}")
+    lines.append(f"> **Generated:** {_today()}")
+    lines.append("")
+    lines.append("Instructions: For each finding below, mark your decision:")
+    lines.append("- `[x] accept` — apply the proposed fix")
+    lines.append("- `[x] reject` — do not fix, leave as-is")
+    lines.append("- `[x] comment` — needs discussion (add your note)")
+    lines.append("")
+    lines.append("---")
+    lines.append("")
+
+    # Collect issues (errors + warnings) for numbered sections
+    issue_num = 0
+    for category in ["filename", "bib", "svg", "yaml", "pdf_cross_check"]:
+        for level, msg in report[category]:
+            if level in ("ERROR", "WARNING"):
+                issue_num += 1
+                label = "ERROR" if level == "ERROR" else "SUGGESTION"
+                lines.append(f"## {issue_num}. {msg} ({label})")
+                lines.append("")
+                lines.append(f"**Category:** {category}")
+                lines.append("")
+                # Generate proposed fix hint
+                fix = _suggest_fix(level, msg, dir_name, yaml_data)
+                if fix:
+                    lines.append("**Proposed fix:**")
+                    lines.append(fix)
+                    lines.append("")
+                lines.append("**Decision:**")
+                lines.append("- [ ] accept")
+                lines.append("- [ ] reject")
+                lines.append("- [ ] comment")
+                lines.append("")
+                lines.append("**Reviewer notes:**")
+                lines.append("> ")
+                lines.append("")
+                lines.append("---")
+                lines.append("")
+
+    if issue_num == 0:
+        lines.append("**No issues found!** All checks passed.")
+        lines.append("")
+        lines.append("---")
+        lines.append("")
+
+    # Summary checklist of passing checks
+    lines.append("## Automated Checks Summary")
+    lines.append("")
+    for category in ["filename", "bib", "svg", "yaml", "pdf_cross_check"]:
+        items = report[category]
+        if not items:
+            continue
+        header = category.upper().replace("_", " ")
+        lines.append(f"### {header}")
+        for level, msg in items:
+            if level == "OK":
+                lines.append(f"- [x] {msg}")
+            elif level == "ERROR":
+                lines.append(f"- [ ] {msg} **(see issue above)**")
+            elif level == "WARNING":
+                lines.append(f"- [ ] {msg} **(see issue above)**")
+        lines.append("")
+
+    return "\n".join(lines)
+
+
+def _today():
+    """Return today's date as YYYY-MM-DD."""
+    from datetime import date
+    return date.today().isoformat()
+
+
+def _suggest_fix(level, msg, dir_name, yaml_data):
+    """Generate a proposed fix block for a given issue message."""
+    # Identifier mismatch
+    match = re.search(r"Computed identifier '(\S+)' does not match citationKey '(\S+)'", msg)
+    if match:
+        expected, current = match.group(1), match.group(2)
+        return (
+            f"```bash\n"
+            f"pixi run -e dev rename-identifiers {current} {expected}\n"
+            f"```\n"
+            f"This renames the directory, all files, the bib key, and the YAML citationKey."
+        )
+
+    # Missing field suggestions — detect common patterns
+    if "not found in bibliography" in msg.lower():
+        return "Add a matching entry to `literature/bibliography/bibliography.bib`."
+
+    if "missing" in msg.lower() and "tags" in msg.lower():
+        return "Add a `tags: BCV` (or appropriate) text label in the SVG file."
+
+    if "not lowercase" in msg.lower():
+        return "```bash\npixi run -e dev fix-lowercase\n```"
+
+    return None
+
+
+def parse_review_report(report_path):
+    r"""
+    Parse a Markdown review report and return the decisions.
+
+    Reads the REVIEW.md file and extracts each numbered issue
+    with its accept/reject/comment decision and reviewer notes.
+
+    Parameters
+    ----------
+    report_path : str or Path
+        Path to the ``REVIEW.md`` file.
+
+    Returns
+    -------
+    list of dict
+        List of issues with keys:
+        ``number``, ``title``, ``category``, ``decision``, ``notes``,
+        ``fix_command`` (if present).
+    """
+    report_path = Path(report_path)
+    content = report_path.read_text(encoding="utf-8")
+
+    issues = []
+    # Split into sections by "## N."
+    sections = re.split(r"^## (\d+)\. ", content, flags=re.MULTILINE)
+
+    # sections[0] is the header, then alternating: number, body
+    for i in range(1, len(sections) - 1, 2):
+        number = int(sections[i])
+        body = sections[i + 1]
+
+        # Extract title (first line)
+        title_line = body.split("\n")[0].strip()
+
+        # Extract category
+        cat_match = re.search(r"\*\*Category:\*\*\s*(\S+)", body)
+        category = cat_match.group(1) if cat_match else ""
+
+        # Extract decision
+        decision = "none"
+        if re.search(r"- \[x\] accept", body, re.IGNORECASE):
+            decision = "accept"
+        elif re.search(r"- \[x\] reject", body, re.IGNORECASE):
+            decision = "reject"
+        elif re.search(r"- \[x\] comment", body, re.IGNORECASE):
+            decision = "comment"
+
+        # Extract reviewer notes
+        notes_match = re.search(r"\*\*Reviewer notes:\*\*\n>\s*(.*?)(?:\n---|\n##|\Z)", body, re.DOTALL)
+        notes = notes_match.group(1).strip() if notes_match else ""
+
+        # Extract fix command if present
+        cmd_match = re.search(r"```(?:bash|yaml)?\n(.+?)```", body, re.DOTALL)
+        fix_command = cmd_match.group(1).strip() if cmd_match else ""
+
+        issues.append({
+            "number": number,
+            "title": title_line,
+            "category": category,
+            "decision": decision,
+            "notes": notes,
+            "fix_command": fix_command,
+        })
+
+    return issues
+
+
+def write_review_report(entry_dir, base_branch="main"):
+    r"""
+    Run the review for an entry and write the REVIEW.md report file.
+
+    Parameters
+    ----------
+    entry_dir : str or Path
+        Path to the entry directory.
+    base_branch : str
+        Branch to compare against (default: ``main``).
+
+    Returns
+    -------
+    Path
+        Path to the written REVIEW.md file.
+    """
+    entry_dir = Path(entry_dir)
+    report = review_entry(entry_dir)
+    md = generate_review_report(report, entry_dir)
+    report_path = entry_dir / "REVIEW.md"
+    report_path.write_text(md, encoding="utf-8")
+    logger.info("Review report written to %s", report_path)
+    return report_path
+
+
 def review_pr(base_branch="main"):
     r"""
     Review all new/modified literature entries in the current PR.
