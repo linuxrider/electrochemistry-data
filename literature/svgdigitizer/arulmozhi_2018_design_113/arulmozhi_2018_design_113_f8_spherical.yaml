@@ -6,7 +6,7 @@ curation:
       date: 2025-02-20
 source:
   url: https://doi.org/10.1007/s12678-017-0426-2
-  citationKey: arulmozhi_2017_design_113
+  citationKey: arulmozhi_2018_design_113
   techniques:
   - CV
 system:
@@ -24,7 +24,7 @@ system:
             value: 18.2
             unit: MΩ cm
           totalOrganicCarbon:
-            value: 110
+            value: 10
             unit: ppb
       - name: H2SO4
         type: acid
@@ -50,5 +50,12 @@ system:
           unit: pct
       preparationProcedure:
         description:
-          - Flame and oxygen annealled before measurement. 
+          - Flame and oxygen annealed before measurement.
           - details see https://doi.org/10.1007/s12678-016-0331-0.
+    - name: REF
+      function: reference electrode
+      type: reversible hydrogen electrode
+      material: Pt
+    - name: CE
+      function: counter electrode
+      material: Pt
