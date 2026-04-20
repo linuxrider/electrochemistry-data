@@ -1,23 +1,4 @@
 **Added:**
 
-* Added <news item>.
-
-**Changed:**
-
-* Changed <news item>.
-
-**Removed:**
-
-* Removed <news item>.
-
-**Fixed:**
-
-* Fixed <news item>.
-
-**Deprecated:**
-
-* Deprecated <news item>.
-
-**Performance:**
-
-* Improved <news item>.
+* Added figures 1a, b and 2a and b from Anjos et al., 2010.
+* Added method and pixi command to harmonize the bibliography entries in the bib file.
