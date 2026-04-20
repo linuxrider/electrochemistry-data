@@ -6,7 +6,7 @@ curation:
       date: 2026-02-02
 source:
   url: https://doi.org/10.1016/S0378-7753(02)00545-1
-  citationKey: hirai_2003_in_329
+  citationKey: hirai_2003_situ_329
   techniques:
   - CV
 system:
@@ -21,10 +21,11 @@ system:
       - name: H2SO4
         type: acid
         concentration:
-          value: 0.05
-          unit: mol / l
+          value: 50
+          unit: mmol / l
         source:
           supplier: Wako
+          grade: Superior
     temperature:
       value: rt
   electrodes:
@@ -35,10 +36,10 @@ system:
       function: working electrode
       type: single crystal
       material: Pb
-      crystallographicOrientation: '100'
+      crystallographicOrientation: '111'
       source:
         supplier: MaTeck Co.
       preparationProcedure:
         description:
           - Chemically polished with a mixed solution of acetic acid and hydrogen peroxide.
-          - Washed with ethanol. 
+          - Washed with ethanol.
