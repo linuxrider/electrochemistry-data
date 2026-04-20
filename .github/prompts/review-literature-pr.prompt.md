@@ -170,11 +170,17 @@ Do not commit it — it is an internal review artifact.
 After all accepted fixes are applied and validation passes, **ask the reviewer
 for confirmation**, then:
 
-1. **Commit the changes:**
+1. **Commit the changes** with a `Co-authored-by` trailer so the Copilot avatar
+   appears on the commit in GitHub:
    ```bash
    git add -A
-   git commit -m "review: apply fixes for {identifier}"
+   git commit -m "review: apply fixes for {identifier}
+
+   Co-authored-by: github-copilot[bot] <noreply@github.com>"
    ```
+   Note: `Co-authored-by` makes Copilot visible on individual commits but does
+   **not** add it as a PR participant. The PR participants sidebar only lists
+   accounts that commented, reviewed, or were requested for review.
 
 2. **Push to the PR branch** (ask before pushing):
    ```bash
