@@ -117,7 +117,7 @@ figureDescription:
     unit: mV / s
 dataDescription:
   dialect:
-    delimiters: "\t"
+    delimiter: "\t"
     decimal: '.'
     encoding: utf-8-sig
     headerLines: 0
