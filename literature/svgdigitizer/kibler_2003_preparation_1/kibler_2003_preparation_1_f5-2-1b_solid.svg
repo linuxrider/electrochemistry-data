@@ -68,7 +68,7 @@
            sodipodi:role="line"
            id="tspan536"
            x="2783.9343"
-           y="2634.0908">curve: Au(100) solid</tspan></text>
+           y="2634.0908">curve: solid</tspan></text>
     </g>
     <g
        id="g503"
@@ -87,7 +87,7 @@
            sodipodi:role="line"
            id="tspan446"
            x="1347.9948"
-           y="3649.8164">j1: 125 A</tspan></text>
+           y="3649.8164">j1: 125 uA / cm2</tspan></text>
     </g>
     <g
        id="g545"
@@ -105,7 +105,7 @@
            sodipodi:role="line"
            id="tspan446-9"
            x="1291.0469"
-           y="3657.4006">j2: -125 A</tspan></text>
+           y="3657.4006">j2: -125 uA / cm2</tspan></text>
     </g>
     <g
        id="g1260"
@@ -123,7 +123,7 @@
            sodipodi:role="line"
            x="1680.7899"
            y="3763.8547"
-           id="tspan553">E1: -0.6 V</tspan></text>
+           id="tspan553">E1: -0.6 V vs SCE</tspan></text>
     </g>
     <g
        id="g1164"
@@ -141,7 +141,7 @@
            sodipodi:role="line"
            x="1721.2213"
            y="3714.8369"
-           id="tspan553-8">E2: 1.5 V</tspan></text>
+           id="tspan553-8">E2: 1.5 V vs SCE</tspan></text>
     </g>
     <text
        xml:space="preserve"
@@ -153,5 +153,25 @@
          id="tspan3071"
          x="4020.9797"
          y="2763.4788">scan rate: 10 mV / s</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:53.3333px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial, Normal';text-align:justify;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb"
+       x="4026.3594"
+       y="2868.8281"
+       id="text3073-4"><tspan
+         sodipodi:role="line"
+         id="tspan3071-8"
+         x="4026.3594"
+         y="2868.8281">tags: BCV</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:53.3333px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial, Normal';text-align:justify;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb"
+       x="4023.1995"
+       y="2975.0291"
+       id="text3073-4-4"><tspan
+         sodipodi:role="line"
+         id="tspan3071-8-5"
+         x="4023.1995"
+         y="2975.0291">figure: 5-2-1b</tspan></text>
   </g>
 </svg>

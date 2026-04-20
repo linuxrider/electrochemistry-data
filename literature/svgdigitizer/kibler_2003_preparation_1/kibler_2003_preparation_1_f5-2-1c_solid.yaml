@@ -37,13 +37,13 @@ system:
     - name: WE
       function: working electrode
       material: Au
-      crystallographicOrientation: '100'
+      crystallographicOrientation: '110'
       source:
         manufacturer: MaTecK
       shape:
         type: cylinder
 source:
-  citationKey: kibler_2003_preparation
+  citationKey: kibler_2003_preparation_1
   url: https://www.uni-ulm.de/fileadmin/website_uni_ulm/nawi.inst.080/mitarbeiter/Kibler/KiblerSingleCrystals2003.pdf
 curation:
   process:

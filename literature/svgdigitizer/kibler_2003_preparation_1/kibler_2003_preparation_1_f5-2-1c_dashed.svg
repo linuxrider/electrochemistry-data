@@ -4,8 +4,8 @@
    version="1.1"
    width="5100px"
    id="svg2"
-   sodipodi:docname="kibler_2003_preparation_f5.2.1_Au(110)_dashed.svg"
-   inkscape:version="1.4.3 (0d15f75042, 2025-12-25)"
+   sodipodi:docname="kibler_2003_preparation_1_f5-2-1c_dashed.svg"
+   inkscape:version="1.4.2 (f4327f4, 2025-05-13)"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -21,12 +21,12 @@
      inkscape:pagecheckerboard="0"
      inkscape:deskcolor="#d1d1d1"
      inkscape:zoom="0.35355339"
-     inkscape:cx="2776.1012"
-     inkscape:cy="3876.3594"
-     inkscape:window-width="1920"
-     inkscape:window-height="1011"
-     inkscape:window-x="0"
-     inkscape:window-y="0"
+     inkscape:cx="2774.687"
+     inkscape:cy="3879.1878"
+     inkscape:window-width="2880"
+     inkscape:window-height="1694"
+     inkscape:window-x="-11"
+     inkscape:window-y="-11"
      inkscape:window-maximized="1"
      inkscape:current-layer="digitization-layer" />
   <defs
@@ -69,7 +69,7 @@
            sodipodi:role="line"
            id="tspan446"
            x="1512.5044"
-           y="3657.178">j1: 75 A</tspan></text>
+           y="3657.178">j1: 75 uA / cm2</tspan></text>
     </g>
     <g
        id="g545"
@@ -87,7 +87,7 @@
            sodipodi:role="line"
            id="tspan446-9"
            x="1476.4688"
-           y="3657.178">j2: -75 A</tspan></text>
+           y="3657.178">j2: -75 uA / cm2</tspan></text>
     </g>
     <g
        id="g1260"
@@ -141,7 +141,7 @@
            sodipodi:role="line"
            id="tspan1219"
            x="2896.4236"
-           y="4251.2817">curve: Au(110) dashed</tspan></text>
+           y="4251.2817">curve: dashed</tspan></text>
     </g>
     <text
        xml:space="preserve"
@@ -153,5 +153,35 @@
          id="tspan3071"
          x="2554.3569"
          y="3836.6982">scan rate: 10 mV / s</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:53.3333px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial, Normal';text-align:justify;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb"
+       x="4026.3594"
+       y="3970.0000"
+       id="text3073-4"><tspan
+         sodipodi:role="line"
+         id="tspan3071-8"
+         x="4026.3594"
+         y="3970.0000">tags: BCV</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:53.3333px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial, Normal';text-align:justify;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb"
+       x="4023.1995"
+       y="4075.0000"
+       id="text3073-4-4"><tspan
+         sodipodi:role="line"
+         id="tspan3071-8-5"
+         x="4023.1995"
+         y="4075.0000">figure: 5-2-1c</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:53.3333px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial, Normal';text-align:justify;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb"
+       x="4017.2158"
+       y="4177.3379"
+       id="text3073-4-4-4"><tspan
+         sodipodi:role="line"
+         id="tspan3071-8-5-5"
+         x="4017.2158"
+         y="4177.3379">j_scaling_factor: 30</tspan></text>
   </g>
 </svg>
