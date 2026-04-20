@@ -21,6 +21,12 @@ system:
         concentration:
           value: 0.1
           unit: mol L⁻¹
+      - name: Ar
+        type: gas
+        source:
+          supplier: Bay Gas
+          purity:
+            grade: Research Purity
     ph:
       value: 1.041
       comment: Estimated with CurTiPot on extraction from publication using a temperature of 25°C.
@@ -49,15 +55,15 @@ system:
       preparationProcedure:
         description:
           - flame annealed in a propane flame
-          - cooled in an Ar atmosphere 
+          - cooled in an Ar atmosphere
           - mounted in the RRDE setup
           - contact electrolyte under potentiostatic control at ≈0.1 V vs. SCE
-          - 0 rpm
+          - electrode was not rotated (0 rpm) during measurement
       geometricElectrolyteContactArea:
         value: 0.283
-        unit: cm⁻²
+        unit: cm²
 source:
-  citationKey: blizanac_2003_anion_625
+  citationKey: blizanac_2004_anion_625
   url: https://doi.org/10.1021/jp036483l
 curation:
   process:
