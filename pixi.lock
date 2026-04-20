@@ -204,7 +204,7 @@ environments:
       - pypi: https://files.pythonhosted.org/packages/a6/a5/c0b6468d3824fe3fde30dbb5e1f687b291608f9473681bbf7dabbf5a87d7/text_unidecode-1.3-py2.py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/4a/91/48db081e7a63bb37284f9fbcefda7c44c277b18b0e13fbc36ea2335b71e6/typer-0.24.1-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/dc/9b/47798a6c91d8bdb567fe2698fe81e0c6b7cb7ef4d13da4114b41d239f65d/typing_inspection-0.4.2-py3-none-any.whl
-      - pypi: https://files.pythonhosted.org/packages/54/af/d7e39e156940769d0cd35427b5131e93a32533dab9e9b7687e5e0cc5725c/unitpackage-0.12.0-py3-none-any.whl
+      - pypi: https://files.pythonhosted.org/packages/e1/03/bc17b80d0f9330dfd454f1d661391a412bba6de837b413cf4515f04bf7b9/unitpackage-0.13.1-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/fa/6e/3e955517e22cbdd565f2f8b2e73d52528b14b8bcfdb04f62466b071de847/validators-0.35.0-py3-none-any.whl
       - pypi: ./
       osx-64:
@@ -397,7 +397,7 @@ environments:
       - pypi: https://files.pythonhosted.org/packages/a6/a5/c0b6468d3824fe3fde30dbb5e1f687b291608f9473681bbf7dabbf5a87d7/text_unidecode-1.3-py2.py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/4a/91/48db081e7a63bb37284f9fbcefda7c44c277b18b0e13fbc36ea2335b71e6/typer-0.24.1-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/dc/9b/47798a6c91d8bdb567fe2698fe81e0c6b7cb7ef4d13da4114b41d239f65d/typing_inspection-0.4.2-py3-none-any.whl
-      - pypi: https://files.pythonhosted.org/packages/54/af/d7e39e156940769d0cd35427b5131e93a32533dab9e9b7687e5e0cc5725c/unitpackage-0.12.0-py3-none-any.whl
+      - pypi: https://files.pythonhosted.org/packages/e1/03/bc17b80d0f9330dfd454f1d661391a412bba6de837b413cf4515f04bf7b9/unitpackage-0.13.1-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/fa/6e/3e955517e22cbdd565f2f8b2e73d52528b14b8bcfdb04f62466b071de847/validators-0.35.0-py3-none-any.whl
       - pypi: ./
       win-64:
@@ -594,7 +594,7 @@ environments:
       - pypi: https://files.pythonhosted.org/packages/a6/a5/c0b6468d3824fe3fde30dbb5e1f687b291608f9473681bbf7dabbf5a87d7/text_unidecode-1.3-py2.py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/4a/91/48db081e7a63bb37284f9fbcefda7c44c277b18b0e13fbc36ea2335b71e6/typer-0.24.1-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/dc/9b/47798a6c91d8bdb567fe2698fe81e0c6b7cb7ef4d13da4114b41d239f65d/typing_inspection-0.4.2-py3-none-any.whl
-      - pypi: https://files.pythonhosted.org/packages/54/af/d7e39e156940769d0cd35427b5131e93a32533dab9e9b7687e5e0cc5725c/unitpackage-0.12.0-py3-none-any.whl
+      - pypi: https://files.pythonhosted.org/packages/e1/03/bc17b80d0f9330dfd454f1d661391a412bba6de837b413cf4515f04bf7b9/unitpackage-0.13.1-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/fa/6e/3e955517e22cbdd565f2f8b2e73d52528b14b8bcfdb04f62466b071de847/validators-0.35.0-py3-none-any.whl
       - pypi: ./
   dev:
@@ -886,7 +886,7 @@ environments:
       - pypi: https://files.pythonhosted.org/packages/a6/a5/c0b6468d3824fe3fde30dbb5e1f687b291608f9473681bbf7dabbf5a87d7/text_unidecode-1.3-py2.py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/4a/91/48db081e7a63bb37284f9fbcefda7c44c277b18b0e13fbc36ea2335b71e6/typer-0.24.1-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/dc/9b/47798a6c91d8bdb567fe2698fe81e0c6b7cb7ef4d13da4114b41d239f65d/typing_inspection-0.4.2-py3-none-any.whl
-      - pypi: https://files.pythonhosted.org/packages/54/af/d7e39e156940769d0cd35427b5131e93a32533dab9e9b7687e5e0cc5725c/unitpackage-0.12.0-py3-none-any.whl
+      - pypi: https://files.pythonhosted.org/packages/e1/03/bc17b80d0f9330dfd454f1d661391a412bba6de837b413cf4515f04bf7b9/unitpackage-0.13.1-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/fa/6e/3e955517e22cbdd565f2f8b2e73d52528b14b8bcfdb04f62466b071de847/validators-0.35.0-py3-none-any.whl
       - pypi: ./
       osx-64:
@@ -1164,7 +1164,7 @@ environments:
       - pypi: https://files.pythonhosted.org/packages/a6/a5/c0b6468d3824fe3fde30dbb5e1f687b291608f9473681bbf7dabbf5a87d7/text_unidecode-1.3-py2.py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/4a/91/48db081e7a63bb37284f9fbcefda7c44c277b18b0e13fbc36ea2335b71e6/typer-0.24.1-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/dc/9b/47798a6c91d8bdb567fe2698fe81e0c6b7cb7ef4d13da4114b41d239f65d/typing_inspection-0.4.2-py3-none-any.whl
-      - pypi: https://files.pythonhosted.org/packages/54/af/d7e39e156940769d0cd35427b5131e93a32533dab9e9b7687e5e0cc5725c/unitpackage-0.12.0-py3-none-any.whl
+      - pypi: https://files.pythonhosted.org/packages/e1/03/bc17b80d0f9330dfd454f1d661391a412bba6de837b413cf4515f04bf7b9/unitpackage-0.13.1-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/fa/6e/3e955517e22cbdd565f2f8b2e73d52528b14b8bcfdb04f62466b071de847/validators-0.35.0-py3-none-any.whl
       - pypi: ./
       win-64:
@@ -1447,7 +1447,7 @@ environments:
       - pypi: https://files.pythonhosted.org/packages/a6/a5/c0b6468d3824fe3fde30dbb5e1f687b291608f9473681bbf7dabbf5a87d7/text_unidecode-1.3-py2.py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/4a/91/48db081e7a63bb37284f9fbcefda7c44c277b18b0e13fbc36ea2335b71e6/typer-0.24.1-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/dc/9b/47798a6c91d8bdb567fe2698fe81e0c6b7cb7ef4d13da4114b41d239f65d/typing_inspection-0.4.2-py3-none-any.whl
-      - pypi: https://files.pythonhosted.org/packages/54/af/d7e39e156940769d0cd35427b5131e93a32533dab9e9b7687e5e0cc5725c/unitpackage-0.12.0-py3-none-any.whl
+      - pypi: https://files.pythonhosted.org/packages/e1/03/bc17b80d0f9330dfd454f1d661391a412bba6de837b413cf4515f04bf7b9/unitpackage-0.13.1-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/fa/6e/3e955517e22cbdd565f2f8b2e73d52528b14b8bcfdb04f62466b071de847/validators-0.35.0-py3-none-any.whl
       - pypi: ./
   python-310:
@@ -1665,7 +1665,7 @@ environments:
       - pypi: https://files.pythonhosted.org/packages/a6/a5/c0b6468d3824fe3fde30dbb5e1f687b291608f9473681bbf7dabbf5a87d7/text_unidecode-1.3-py2.py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/4a/91/48db081e7a63bb37284f9fbcefda7c44c277b18b0e13fbc36ea2335b71e6/typer-0.24.1-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/dc/9b/47798a6c91d8bdb567fe2698fe81e0c6b7cb7ef4d13da4114b41d239f65d/typing_inspection-0.4.2-py3-none-any.whl
-      - pypi: https://files.pythonhosted.org/packages/54/af/d7e39e156940769d0cd35427b5131e93a32533dab9e9b7687e5e0cc5725c/unitpackage-0.12.0-py3-none-any.whl
+      - pypi: https://files.pythonhosted.org/packages/e1/03/bc17b80d0f9330dfd454f1d661391a412bba6de837b413cf4515f04bf7b9/unitpackage-0.13.1-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/fa/6e/3e955517e22cbdd565f2f8b2e73d52528b14b8bcfdb04f62466b071de847/validators-0.35.0-py3-none-any.whl
       - pypi: ./
       osx-64:
@@ -1867,7 +1867,7 @@ environments:
       - pypi: https://files.pythonhosted.org/packages/a6/a5/c0b6468d3824fe3fde30dbb5e1f687b291608f9473681bbf7dabbf5a87d7/text_unidecode-1.3-py2.py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/4a/91/48db081e7a63bb37284f9fbcefda7c44c277b18b0e13fbc36ea2335b71e6/typer-0.24.1-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/dc/9b/47798a6c91d8bdb567fe2698fe81e0c6b7cb7ef4d13da4114b41d239f65d/typing_inspection-0.4.2-py3-none-any.whl
-      - pypi: https://files.pythonhosted.org/packages/54/af/d7e39e156940769d0cd35427b5131e93a32533dab9e9b7687e5e0cc5725c/unitpackage-0.12.0-py3-none-any.whl
+      - pypi: https://files.pythonhosted.org/packages/e1/03/bc17b80d0f9330dfd454f1d661391a412bba6de837b413cf4515f04bf7b9/unitpackage-0.13.1-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/fa/6e/3e955517e22cbdd565f2f8b2e73d52528b14b8bcfdb04f62466b071de847/validators-0.35.0-py3-none-any.whl
       - pypi: ./
       win-64:
@@ -2072,7 +2072,7 @@ environments:
       - pypi: https://files.pythonhosted.org/packages/a6/a5/c0b6468d3824fe3fde30dbb5e1f687b291608f9473681bbf7dabbf5a87d7/text_unidecode-1.3-py2.py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/4a/91/48db081e7a63bb37284f9fbcefda7c44c277b18b0e13fbc36ea2335b71e6/typer-0.24.1-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/dc/9b/47798a6c91d8bdb567fe2698fe81e0c6b7cb7ef4d13da4114b41d239f65d/typing_inspection-0.4.2-py3-none-any.whl
-      - pypi: https://files.pythonhosted.org/packages/54/af/d7e39e156940769d0cd35427b5131e93a32533dab9e9b7687e5e0cc5725c/unitpackage-0.12.0-py3-none-any.whl
+      - pypi: https://files.pythonhosted.org/packages/e1/03/bc17b80d0f9330dfd454f1d661391a412bba6de837b413cf4515f04bf7b9/unitpackage-0.13.1-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/fa/6e/3e955517e22cbdd565f2f8b2e73d52528b14b8bcfdb04f62466b071de847/validators-0.35.0-py3-none-any.whl
       - pypi: ./
   python-311:
@@ -2290,7 +2290,7 @@ environments:
       - pypi: https://files.pythonhosted.org/packages/a6/a5/c0b6468d3824fe3fde30dbb5e1f687b291608f9473681bbf7dabbf5a87d7/text_unidecode-1.3-py2.py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/4a/91/48db081e7a63bb37284f9fbcefda7c44c277b18b0e13fbc36ea2335b71e6/typer-0.24.1-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/dc/9b/47798a6c91d8bdb567fe2698fe81e0c6b7cb7ef4d13da4114b41d239f65d/typing_inspection-0.4.2-py3-none-any.whl
-      - pypi: https://files.pythonhosted.org/packages/54/af/d7e39e156940769d0cd35427b5131e93a32533dab9e9b7687e5e0cc5725c/unitpackage-0.12.0-py3-none-any.whl
+      - pypi: https://files.pythonhosted.org/packages/e1/03/bc17b80d0f9330dfd454f1d661391a412bba6de837b413cf4515f04bf7b9/unitpackage-0.13.1-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/fa/6e/3e955517e22cbdd565f2f8b2e73d52528b14b8bcfdb04f62466b071de847/validators-0.35.0-py3-none-any.whl
       - pypi: ./
       osx-64:
@@ -2492,7 +2492,7 @@ environments:
       - pypi: https://files.pythonhosted.org/packages/a6/a5/c0b6468d3824fe3fde30dbb5e1f687b291608f9473681bbf7dabbf5a87d7/text_unidecode-1.3-py2.py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/4a/91/48db081e7a63bb37284f9fbcefda7c44c277b18b0e13fbc36ea2335b71e6/typer-0.24.1-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/dc/9b/47798a6c91d8bdb567fe2698fe81e0c6b7cb7ef4d13da4114b41d239f65d/typing_inspection-0.4.2-py3-none-any.whl
-      - pypi: https://files.pythonhosted.org/packages/54/af/d7e39e156940769d0cd35427b5131e93a32533dab9e9b7687e5e0cc5725c/unitpackage-0.12.0-py3-none-any.whl
+      - pypi: https://files.pythonhosted.org/packages/e1/03/bc17b80d0f9330dfd454f1d661391a412bba6de837b413cf4515f04bf7b9/unitpackage-0.13.1-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/fa/6e/3e955517e22cbdd565f2f8b2e73d52528b14b8bcfdb04f62466b071de847/validators-0.35.0-py3-none-any.whl
       - pypi: ./
       win-64:
@@ -2697,7 +2697,7 @@ environments:
       - pypi: https://files.pythonhosted.org/packages/a6/a5/c0b6468d3824fe3fde30dbb5e1f687b291608f9473681bbf7dabbf5a87d7/text_unidecode-1.3-py2.py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/4a/91/48db081e7a63bb37284f9fbcefda7c44c277b18b0e13fbc36ea2335b71e6/typer-0.24.1-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/dc/9b/47798a6c91d8bdb567fe2698fe81e0c6b7cb7ef4d13da4114b41d239f65d/typing_inspection-0.4.2-py3-none-any.whl
-      - pypi: https://files.pythonhosted.org/packages/54/af/d7e39e156940769d0cd35427b5131e93a32533dab9e9b7687e5e0cc5725c/unitpackage-0.12.0-py3-none-any.whl
+      - pypi: https://files.pythonhosted.org/packages/e1/03/bc17b80d0f9330dfd454f1d661391a412bba6de837b413cf4515f04bf7b9/unitpackage-0.13.1-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/fa/6e/3e955517e22cbdd565f2f8b2e73d52528b14b8bcfdb04f62466b071de847/validators-0.35.0-py3-none-any.whl
       - pypi: ./
   python-312:
@@ -2918,7 +2918,7 @@ environments:
       - pypi: https://files.pythonhosted.org/packages/a6/a5/c0b6468d3824fe3fde30dbb5e1f687b291608f9473681bbf7dabbf5a87d7/text_unidecode-1.3-py2.py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/4a/91/48db081e7a63bb37284f9fbcefda7c44c277b18b0e13fbc36ea2335b71e6/typer-0.24.1-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/dc/9b/47798a6c91d8bdb567fe2698fe81e0c6b7cb7ef4d13da4114b41d239f65d/typing_inspection-0.4.2-py3-none-any.whl
-      - pypi: https://files.pythonhosted.org/packages/54/af/d7e39e156940769d0cd35427b5131e93a32533dab9e9b7687e5e0cc5725c/unitpackage-0.12.0-py3-none-any.whl
+      - pypi: https://files.pythonhosted.org/packages/e1/03/bc17b80d0f9330dfd454f1d661391a412bba6de837b413cf4515f04bf7b9/unitpackage-0.13.1-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/fa/6e/3e955517e22cbdd565f2f8b2e73d52528b14b8bcfdb04f62466b071de847/validators-0.35.0-py3-none-any.whl
       - pypi: ./
       osx-64:
@@ -3123,7 +3123,7 @@ environments:
       - pypi: https://files.pythonhosted.org/packages/a6/a5/c0b6468d3824fe3fde30dbb5e1f687b291608f9473681bbf7dabbf5a87d7/text_unidecode-1.3-py2.py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/4a/91/48db081e7a63bb37284f9fbcefda7c44c277b18b0e13fbc36ea2335b71e6/typer-0.24.1-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/dc/9b/47798a6c91d8bdb567fe2698fe81e0c6b7cb7ef4d13da4114b41d239f65d/typing_inspection-0.4.2-py3-none-any.whl
-      - pypi: https://files.pythonhosted.org/packages/54/af/d7e39e156940769d0cd35427b5131e93a32533dab9e9b7687e5e0cc5725c/unitpackage-0.12.0-py3-none-any.whl
+      - pypi: https://files.pythonhosted.org/packages/e1/03/bc17b80d0f9330dfd454f1d661391a412bba6de837b413cf4515f04bf7b9/unitpackage-0.13.1-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/fa/6e/3e955517e22cbdd565f2f8b2e73d52528b14b8bcfdb04f62466b071de847/validators-0.35.0-py3-none-any.whl
       - pypi: ./
       win-64:
@@ -3331,7 +3331,7 @@ environments:
       - pypi: https://files.pythonhosted.org/packages/a6/a5/c0b6468d3824fe3fde30dbb5e1f687b291608f9473681bbf7dabbf5a87d7/text_unidecode-1.3-py2.py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/4a/91/48db081e7a63bb37284f9fbcefda7c44c277b18b0e13fbc36ea2335b71e6/typer-0.24.1-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/dc/9b/47798a6c91d8bdb567fe2698fe81e0c6b7cb7ef4d13da4114b41d239f65d/typing_inspection-0.4.2-py3-none-any.whl
-      - pypi: https://files.pythonhosted.org/packages/54/af/d7e39e156940769d0cd35427b5131e93a32533dab9e9b7687e5e0cc5725c/unitpackage-0.12.0-py3-none-any.whl
+      - pypi: https://files.pythonhosted.org/packages/e1/03/bc17b80d0f9330dfd454f1d661391a412bba6de837b413cf4515f04bf7b9/unitpackage-0.13.1-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/fa/6e/3e955517e22cbdd565f2f8b2e73d52528b14b8bcfdb04f62466b071de847/validators-0.35.0-py3-none-any.whl
       - pypi: ./
   python-313:
@@ -3550,7 +3550,7 @@ environments:
       - pypi: https://files.pythonhosted.org/packages/a6/a5/c0b6468d3824fe3fde30dbb5e1f687b291608f9473681bbf7dabbf5a87d7/text_unidecode-1.3-py2.py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/4a/91/48db081e7a63bb37284f9fbcefda7c44c277b18b0e13fbc36ea2335b71e6/typer-0.24.1-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/dc/9b/47798a6c91d8bdb567fe2698fe81e0c6b7cb7ef4d13da4114b41d239f65d/typing_inspection-0.4.2-py3-none-any.whl
-      - pypi: https://files.pythonhosted.org/packages/54/af/d7e39e156940769d0cd35427b5131e93a32533dab9e9b7687e5e0cc5725c/unitpackage-0.12.0-py3-none-any.whl
+      - pypi: https://files.pythonhosted.org/packages/e1/03/bc17b80d0f9330dfd454f1d661391a412bba6de837b413cf4515f04bf7b9/unitpackage-0.13.1-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/fa/6e/3e955517e22cbdd565f2f8b2e73d52528b14b8bcfdb04f62466b071de847/validators-0.35.0-py3-none-any.whl
       - pypi: ./
       osx-64:
@@ -3755,7 +3755,7 @@ environments:
       - pypi: https://files.pythonhosted.org/packages/a6/a5/c0b6468d3824fe3fde30dbb5e1f687b291608f9473681bbf7dabbf5a87d7/text_unidecode-1.3-py2.py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/4a/91/48db081e7a63bb37284f9fbcefda7c44c277b18b0e13fbc36ea2335b71e6/typer-0.24.1-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/dc/9b/47798a6c91d8bdb567fe2698fe81e0c6b7cb7ef4d13da4114b41d239f65d/typing_inspection-0.4.2-py3-none-any.whl
-      - pypi: https://files.pythonhosted.org/packages/54/af/d7e39e156940769d0cd35427b5131e93a32533dab9e9b7687e5e0cc5725c/unitpackage-0.12.0-py3-none-any.whl
+      - pypi: https://files.pythonhosted.org/packages/e1/03/bc17b80d0f9330dfd454f1d661391a412bba6de837b413cf4515f04bf7b9/unitpackage-0.13.1-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/fa/6e/3e955517e22cbdd565f2f8b2e73d52528b14b8bcfdb04f62466b071de847/validators-0.35.0-py3-none-any.whl
       - pypi: ./
       win-64:
@@ -3963,7 +3963,7 @@ environments:
       - pypi: https://files.pythonhosted.org/packages/a6/a5/c0b6468d3824fe3fde30dbb5e1f687b291608f9473681bbf7dabbf5a87d7/text_unidecode-1.3-py2.py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/4a/91/48db081e7a63bb37284f9fbcefda7c44c277b18b0e13fbc36ea2335b71e6/typer-0.24.1-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/dc/9b/47798a6c91d8bdb567fe2698fe81e0c6b7cb7ef4d13da4114b41d239f65d/typing_inspection-0.4.2-py3-none-any.whl
-      - pypi: https://files.pythonhosted.org/packages/54/af/d7e39e156940769d0cd35427b5131e93a32533dab9e9b7687e5e0cc5725c/unitpackage-0.12.0-py3-none-any.whl
+      - pypi: https://files.pythonhosted.org/packages/e1/03/bc17b80d0f9330dfd454f1d661391a412bba6de837b413cf4515f04bf7b9/unitpackage-0.13.1-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/fa/6e/3e955517e22cbdd565f2f8b2e73d52528b14b8bcfdb04f62466b071de847/validators-0.35.0-py3-none-any.whl
       - pypi: ./
   python-314:
@@ -4182,7 +4182,7 @@ environments:
       - pypi: https://files.pythonhosted.org/packages/a6/a5/c0b6468d3824fe3fde30dbb5e1f687b291608f9473681bbf7dabbf5a87d7/text_unidecode-1.3-py2.py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/4a/91/48db081e7a63bb37284f9fbcefda7c44c277b18b0e13fbc36ea2335b71e6/typer-0.24.1-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/dc/9b/47798a6c91d8bdb567fe2698fe81e0c6b7cb7ef4d13da4114b41d239f65d/typing_inspection-0.4.2-py3-none-any.whl
-      - pypi: https://files.pythonhosted.org/packages/54/af/d7e39e156940769d0cd35427b5131e93a32533dab9e9b7687e5e0cc5725c/unitpackage-0.12.0-py3-none-any.whl
+      - pypi: https://files.pythonhosted.org/packages/e1/03/bc17b80d0f9330dfd454f1d661391a412bba6de837b413cf4515f04bf7b9/unitpackage-0.13.1-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/fa/6e/3e955517e22cbdd565f2f8b2e73d52528b14b8bcfdb04f62466b071de847/validators-0.35.0-py3-none-any.whl
       - pypi: ./
       osx-64:
@@ -4387,7 +4387,7 @@ environments:
       - pypi: https://files.pythonhosted.org/packages/a6/a5/c0b6468d3824fe3fde30dbb5e1f687b291608f9473681bbf7dabbf5a87d7/text_unidecode-1.3-py2.py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/4a/91/48db081e7a63bb37284f9fbcefda7c44c277b18b0e13fbc36ea2335b71e6/typer-0.24.1-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/dc/9b/47798a6c91d8bdb567fe2698fe81e0c6b7cb7ef4d13da4114b41d239f65d/typing_inspection-0.4.2-py3-none-any.whl
-      - pypi: https://files.pythonhosted.org/packages/54/af/d7e39e156940769d0cd35427b5131e93a32533dab9e9b7687e5e0cc5725c/unitpackage-0.12.0-py3-none-any.whl
+      - pypi: https://files.pythonhosted.org/packages/e1/03/bc17b80d0f9330dfd454f1d661391a412bba6de837b413cf4515f04bf7b9/unitpackage-0.13.1-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/fa/6e/3e955517e22cbdd565f2f8b2e73d52528b14b8bcfdb04f62466b071de847/validators-0.35.0-py3-none-any.whl
       - pypi: ./
       win-64:
@@ -4595,7 +4595,7 @@ environments:
       - pypi: https://files.pythonhosted.org/packages/a6/a5/c0b6468d3824fe3fde30dbb5e1f687b291608f9473681bbf7dabbf5a87d7/text_unidecode-1.3-py2.py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/4a/91/48db081e7a63bb37284f9fbcefda7c44c277b18b0e13fbc36ea2335b71e6/typer-0.24.1-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/dc/9b/47798a6c91d8bdb567fe2698fe81e0c6b7cb7ef4d13da4114b41d239f65d/typing_inspection-0.4.2-py3-none-any.whl
-      - pypi: https://files.pythonhosted.org/packages/54/af/d7e39e156940769d0cd35427b5131e93a32533dab9e9b7687e5e0cc5725c/unitpackage-0.12.0-py3-none-any.whl
+      - pypi: https://files.pythonhosted.org/packages/e1/03/bc17b80d0f9330dfd454f1d661391a412bba6de837b413cf4515f04bf7b9/unitpackage-0.13.1-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/fa/6e/3e955517e22cbdd565f2f8b2e73d52528b14b8bcfdb04f62466b071de847/validators-0.35.0-py3-none-any.whl
       - pypi: ./
   release:
@@ -4850,7 +4850,7 @@ environments:
       - pypi: https://files.pythonhosted.org/packages/a6/a5/c0b6468d3824fe3fde30dbb5e1f687b291608f9473681bbf7dabbf5a87d7/text_unidecode-1.3-py2.py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/4a/91/48db081e7a63bb37284f9fbcefda7c44c277b18b0e13fbc36ea2335b71e6/typer-0.24.1-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/dc/9b/47798a6c91d8bdb567fe2698fe81e0c6b7cb7ef4d13da4114b41d239f65d/typing_inspection-0.4.2-py3-none-any.whl
-      - pypi: https://files.pythonhosted.org/packages/54/af/d7e39e156940769d0cd35427b5131e93a32533dab9e9b7687e5e0cc5725c/unitpackage-0.12.0-py3-none-any.whl
+      - pypi: https://files.pythonhosted.org/packages/e1/03/bc17b80d0f9330dfd454f1d661391a412bba6de837b413cf4515f04bf7b9/unitpackage-0.13.1-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/fa/6e/3e955517e22cbdd565f2f8b2e73d52528b14b8bcfdb04f62466b071de847/validators-0.35.0-py3-none-any.whl
       - pypi: ./
       osx-64:
@@ -5072,7 +5072,7 @@ environments:
       - pypi: https://files.pythonhosted.org/packages/a6/a5/c0b6468d3824fe3fde30dbb5e1f687b291608f9473681bbf7dabbf5a87d7/text_unidecode-1.3-py2.py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/4a/91/48db081e7a63bb37284f9fbcefda7c44c277b18b0e13fbc36ea2335b71e6/typer-0.24.1-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/dc/9b/47798a6c91d8bdb567fe2698fe81e0c6b7cb7ef4d13da4114b41d239f65d/typing_inspection-0.4.2-py3-none-any.whl
-      - pypi: https://files.pythonhosted.org/packages/54/af/d7e39e156940769d0cd35427b5131e93a32533dab9e9b7687e5e0cc5725c/unitpackage-0.12.0-py3-none-any.whl
+      - pypi: https://files.pythonhosted.org/packages/e1/03/bc17b80d0f9330dfd454f1d661391a412bba6de837b413cf4515f04bf7b9/unitpackage-0.13.1-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/fa/6e/3e955517e22cbdd565f2f8b2e73d52528b14b8bcfdb04f62466b071de847/validators-0.35.0-py3-none-any.whl
       - pypi: ./
       win-64:
@@ -5303,7 +5303,7 @@ environments:
       - pypi: https://files.pythonhosted.org/packages/a6/a5/c0b6468d3824fe3fde30dbb5e1f687b291608f9473681bbf7dabbf5a87d7/text_unidecode-1.3-py2.py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/4a/91/48db081e7a63bb37284f9fbcefda7c44c277b18b0e13fbc36ea2335b71e6/typer-0.24.1-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/dc/9b/47798a6c91d8bdb567fe2698fe81e0c6b7cb7ef4d13da4114b41d239f65d/typing_inspection-0.4.2-py3-none-any.whl
-      - pypi: https://files.pythonhosted.org/packages/54/af/d7e39e156940769d0cd35427b5131e93a32533dab9e9b7687e5e0cc5725c/unitpackage-0.12.0-py3-none-any.whl
+      - pypi: https://files.pythonhosted.org/packages/e1/03/bc17b80d0f9330dfd454f1d661391a412bba6de837b413cf4515f04bf7b9/unitpackage-0.13.1-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/fa/6e/3e955517e22cbdd565f2f8b2e73d52528b14b8bcfdb04f62466b071de847/validators-0.35.0-py3-none-any.whl
       - pypi: ./
 packages:
@@ -8107,11 +8107,11 @@ packages:
 - pypi: ./
   name: echemdb-ecdata
   version: 0.7.7
-  sha256: 564a5fcca02bcaf3e559b63bf2d8ae852630526f632133054b3f8422f38721be
+  sha256: b93d78dd2096efc77c189ae94f4719bd067b291aacb9b31927b065211bb1d917
   requires_dist:
   - pydantic>=2.12.5,<3
   - svgdigitizer>=0.14.2,<0.15
-  - unitpackage>=0.12.0,<0.13
+  - unitpackage>=0.13.1,<0.14
   requires_python: '>=3.10'
 - conda: https://conda.anaconda.org/conda-forge/noarch/exceptiongroup-1.3.1-pyhd8ed1ab_0.conda
   sha256: ee6cf346d017d954255bbcbdb424cddea4d14e4ed7e9813e429db1d795d01144
@@ -18897,16 +18897,16 @@ packages:
   purls: []
   size: 694692
   timestamp: 1756385147981
-- pypi: https://files.pythonhosted.org/packages/54/af/d7e39e156940769d0cd35427b5131e93a32533dab9e9b7687e5e0cc5725c/unitpackage-0.12.0-py3-none-any.whl
+- pypi: https://files.pythonhosted.org/packages/e1/03/bc17b80d0f9330dfd454f1d661391a412bba6de837b413cf4515f04bf7b9/unitpackage-0.13.1-py3-none-any.whl
   name: unitpackage
-  version: 0.12.0
-  sha256: ace41cd3c4e8787fcd0eb037de73f7db6839786d9a33de31a56a61df418875ce
+  version: 0.13.1
+  sha256: d6684c7413b081c3b7b2ead22579fafca223320f207457b23ed07b599fc9d4ef
   requires_dist:
   - astropy>=5,<8
   - click>=8,<9
   - frictionless>=5.8.3,<6
   - matplotlib>=3.5.0,<4
-  - pandas>=1.3,<3
+  - pandas>=1.3,<4
   - plotly>=5,<7
   - pybtex>=0.25,<0.26
   requires_python: '>=3.10'
