@@ -276,15 +276,22 @@ def review_entry(entry_dir, pdf_text=None):
 
     # ── 5. PDF cross-validation ─────────────────────────────────────
     if pdf_text is None:
-        doi_url = yaml_data.get("source", {}).get("url", "")
-        doi_match = re.search(r"10\.\d{4,9}/[^\s]+", doi_url)
-        if doi_match:
-            doi = doi_match.group(0)
-            pdf_path = download_pdf_from_doi(doi)
-            if pdf_path:
-                pdf_text = extract_pdf_text(pdf_path)
-            else:
-                _add_warning(report, "pdf_cross_check", "Could not download PDF for cross-validation.")
+        # Check for a local PDF in the entry directory first
+        local_pdfs = sorted(entry_dir.glob("*.pdf"))
+        if local_pdfs:
+            pdf_path = str(local_pdfs[0])
+            logger.info("Using local PDF: %s", pdf_path)
+            pdf_text = extract_pdf_text(pdf_path)
+        else:
+            doi_url = yaml_data.get("source", {}).get("url", "")
+            doi_match = re.search(r"10\.\d{4,9}/[^\s]+", doi_url)
+            if doi_match:
+                doi = doi_match.group(0)
+                pdf_path = download_pdf_from_doi(doi)
+                if pdf_path:
+                    pdf_text = extract_pdf_text(pdf_path)
+                else:
+                    _add_warning(report, "pdf_cross_check", "Could not download PDF for cross-validation.")
 
     if pdf_text:
         _cross_validate_with_pdf(report, yaml_data, pdf_text, svg_files)
