@@ -129,7 +129,7 @@ Each issue follows this format:
 - [ ] comment
 
 **Reviewer notes:**
-> 
+>
 ```
 
 Severity levels:
@@ -164,6 +164,37 @@ Each parsed issue returns: `number`, `title`, `category`, `decision`, `notes`, `
 
 **Important:** REVIEW.md is saved at the repo root and listed in `.gitignore`.
 Do not commit it — it is an internal review artifact.
+
+### Step 7: Commit, Push, and Post Review Comment
+
+After all accepted fixes are applied and validation passes, **ask the reviewer
+for confirmation**, then:
+
+1. **Commit the changes:**
+   ```bash
+   git add -A
+   git commit -m "review: apply fixes for {identifier}"
+   ```
+
+2. **Push to the PR branch** (ask before pushing):
+   ```bash
+   git push
+   ```
+
+3. **Post the review report as a PR comment** using the GitKraken MCP tool:
+   ```
+   mcp_gitkraken_issues_add_comment(
+       provider="github",
+       repository_organization="echemdb",
+       repository_name="electrochemistry-data",
+       issue_id="{pr_number}",
+       comment=<contents of REVIEW.md>
+   )
+   ```
+   The PR number is available from the repository context attachment (e.g., PR #107).
+   Include the full REVIEW.md content with the reviewer's decisions marked.
+
+**Important:** Always ask the reviewer before committing, pushing, or posting.
 
 ## Key References
 
