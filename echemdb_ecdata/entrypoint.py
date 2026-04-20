@@ -58,7 +58,7 @@ class Dialect(BaseModel):
         populate_by_name=True, alias_generator=to_camel, extra="allow"
     )
 
-    delimiters: str | None = None
+    delimiter: str | None = None
     decimal: str | None = None
     column_header_lines: int | None = None
     header_lines: int | None = None
