@@ -26,14 +26,14 @@ system:
           totalIonConductivity:
             value: 18
             unit: MΩ cm
-      - name: H2SO4
+      - name: HCl
         type: acid
         concentration:
-          value: 5
+          value: 10
           unit: mM
         purity:
           grade: reagent grade
-    comment: Electorlyte was purges with argon several hours before experiment.
+    comment: Electrolyte was purged with argon several hours before use. Residual oxygen in the argon was reduced by a dual stage gas purification system.
   electrodes:
     - name: WE
       function: working electrode
