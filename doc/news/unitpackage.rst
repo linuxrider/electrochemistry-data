@@ -1,3 +1,3 @@
 **Changed:**
 
-* Changed upper version bound of unitpackage to 0.14.0.
+* Changed unitpackage version requirement to ``>=0.13.1,<0.14`.
