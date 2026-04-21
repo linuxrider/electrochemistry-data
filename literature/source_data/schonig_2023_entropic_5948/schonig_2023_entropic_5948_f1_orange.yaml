@@ -45,11 +45,11 @@ system:
     - concentration:
         unit: mol / l
         value: 0.1
-      name: KCl
+      name: H2SO4
       source:
-        supplier: Alfa Aesar
+        supplier: Merck
         purity:
-          grade: puratronic
+          grade: suprapur
       type: base
     temperature:
       unit: K
@@ -63,8 +63,8 @@ source:
   citationKey: schonig_2023_entropic_5948
   url: https://doi.org/10.1039/D2CP04680F
   figure: '1'
-  curve: green
-  originalFilename: schonig_2023_entropic_5948_f1_green.csv
+  curve: orange
+  originalFilename: schonig_2023_entropic_5948_f1_orange.csv
 figureDescription:
   type: raw
   measurementType: CV

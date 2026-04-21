@@ -45,7 +45,7 @@ system:
     - concentration:
         unit: mol / l
         value: 0.1
-      name: KCl
+      name: KBr
       source:
         supplier: Alfa Aesar
         purity:
@@ -63,8 +63,8 @@ source:
   citationKey: schonig_2023_entropic_5948
   url: https://doi.org/10.1039/D2CP04680F
   figure: '1'
-  curve: green
-  originalFilename: schonig_2023_entropic_5948_f1_green.csv
+  curve: brown
+  originalFilename: schonig_2023_entropic_5948_f1_brown.csv
 figureDescription:
   type: raw
   measurementType: CV

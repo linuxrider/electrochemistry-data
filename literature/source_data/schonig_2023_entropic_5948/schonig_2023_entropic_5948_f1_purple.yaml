@@ -20,6 +20,7 @@ system:
       source:
         manufacturer: homemade
       type: Pt-Pseudo
+      description: Potential offset to match SCE scale
     - name: WE
       function: working electrode
       crystallographicOrientation: '111'
@@ -45,11 +46,12 @@ system:
     - concentration:
         unit: mol / l
         value: 0.1
-      name: KCl
+      name: KI
       source:
         supplier: Alfa Aesar
         purity:
-          grade: puratronic
+          value: 99.98
+          grade: metals basis
       type: base
     temperature:
       unit: K
@@ -63,8 +65,8 @@ source:
   citationKey: schonig_2023_entropic_5948
   url: https://doi.org/10.1039/D2CP04680F
   figure: '1'
-  curve: green
-  originalFilename: schonig_2023_entropic_5948_f1_green.csv
+  curve: purple
+  originalFilename: schonig_2023_entropic_5948_f1_purple.csv
 figureDescription:
   type: raw
   measurementType: CV
