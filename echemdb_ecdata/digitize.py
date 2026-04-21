@@ -39,6 +39,7 @@ Convert all source data files::
 # ********************************************************************
 import logging
 import os
+import sys
 import tempfile
 from dataclasses import dataclass, field
 from io import StringIO
@@ -57,6 +58,7 @@ from echemdb_ecdata.entrypoint import (
     _add_bibdata_to_source,
     build_source_entry,
 )
+from echemdb_ecdata.validate import ECHEMDB_SCHEMA_VERSION
 
 logger = logging.getLogger("echemdb_ecdata.digitize")
 
@@ -220,6 +222,7 @@ def _digitize_single_svg(yaml_path, svg_path, outdir, config, bibdata):
     # that is later passed to _create_package.
     metadata = svgfigure.metadata
     _add_bib_to_metadata(metadata, bibdata, yaml_path.name)
+    metadata["echemdbSchemaVersion"] = ECHEMDB_SCHEMA_VERSION
 
     package = _create_package(metadata, csvname, outdir_str)
     json_out = _outfile(str(svg_path), suffix=".json", outdir=outdir_str)
@@ -338,6 +341,8 @@ def _run_svg_batch(config, yaml_files=None):
             errors += 1
 
     _print_summary("digitized", processed, skipped, errors, len(yaml_paths))
+    if errors:
+        sys.exit(1)
 
 
 # ---------------------------------------------------------------------------
@@ -374,6 +379,8 @@ def _convert_single_source(yaml_path, csv_path, outdir, bibdata):
 
     metadata = metadata_dict.copy()
     del metadata["dataDescription"]
+
+    metadata["echemdbSchemaVersion"] = ECHEMDB_SCHEMA_VERSION
 
     # Add bibliography data
     citation_key = metadata.get("source", {}).get("citationKey", "")
@@ -492,6 +499,8 @@ def _run_source_batch(config, yaml_files=None):
             errors += 1
 
     _print_summary("converted", processed, skipped, errors, len(yaml_paths))
+    if errors:
+        sys.exit(1)
 
 
 # ---------------------------------------------------------------------------

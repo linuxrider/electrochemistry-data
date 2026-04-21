@@ -71,7 +71,10 @@ _SCHEMA_BASE = "https://raw.githubusercontent.com/echemdb/metadata-schema/refs"
 
 #: Default metadata-schema version used for validation.
 #: Change this single value to update the version across all validation tasks.
-SCHEMA_VERSION = "tags/0.5.1"
+SCHEMA_VERSION = "tags/0.7.1"
+#: Clean version string for embedding in generated data packages.
+ECHEMDB_SCHEMA_VERSION = SCHEMA_VERSION.removeprefix("tags/")
+
 
 
 def validate_schema(data_dir, schema_name, version=None, verbose=True):
@@ -386,8 +389,8 @@ def validate_source_data_input(
 
     EXAMPLES::
 
-        >>> errors = validate_source_data_input("literature/source_data")
-        Validation of source data input: checked 4 files, found 0 errors.
+        >>> errors = validate_source_data_input("literature/source_data")  # doctest: +ELLIPSIS
+        Validation of source data input: checked ... files, found 0 errors.
 
     """
     bib_keys = load_bib_keys(bib_path) if os.path.exists(bib_path) else set()
