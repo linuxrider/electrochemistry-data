@@ -4,8 +4,8 @@
    version="1.1"
    width="4959px"
    id="svg1"
-   sodipodi:docname="pajkossy_2004_voltammetry_69_f8a_solid.svg"
-   inkscape:version="1.4.3 (0d15f75, 2025-12-25)"
+   sodipodi:docname="pajkossy_2005_voltammetry_69_f8a_solid.svg"
+   inkscape:version="1.4.2 (f4327f4, 2025-05-13)"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -21,14 +21,14 @@
      inkscape:pagecheckerboard="0"
      inkscape:deskcolor="#d1d1d1"
      inkscape:zoom="0.46304972"
-     inkscape:cx="4080.5553"
-     inkscape:cy="965.33911"
-     inkscape:window-width="1728"
-     inkscape:window-height="1010"
-     inkscape:window-x="-6"
-     inkscape:window-y="-6"
+     inkscape:cx="4081.6351"
+     inkscape:cy="964.2593"
+     inkscape:window-width="2880"
+     inkscape:window-height="1694"
+     inkscape:window-x="-11"
+     inkscape:window-y="-11"
      inkscape:window-maximized="1"
-     inkscape:current-layer="svg1" />
+     inkscape:current-layer="g14" />
   <defs
      id="defs1" />
   <image
@@ -52,7 +52,7 @@
          sodipodi:role="line"
          id="tspan2"
          x="229.81119"
-         y="705.38873">j2: 1.0 A / m2</tspan></text>
+         y="705.38873">j2: 100 uA / cm2</tspan></text>
     <path
        style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:2;stroke-opacity:1"
        d="m 536.96987,692.10429 40.86853,85.22198"
@@ -73,7 +73,7 @@
          x="101.67587"
          y="1842.6377"
          sodipodi:role="line"
-         style="font-size:42.6667px">j1: -2.0 A / m2</tspan></text>
+         style="font-size:42.6667px">j1: -200 uA / cm2</tspan></text>
     <path
        style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:2;stroke-opacity:1"
        d="m 429.59483,1832.7478 105.81465,54.4914"
@@ -183,5 +183,5 @@
        id="tspan3"
        x="4434.5952"
        y="1000.2272"
-       style="font-size:24px;fill:#000000;fill-opacity:1;stroke:none">comment: the graph was a bit noisy.</tspan></text>
+       style="font-size:24px;fill:#000000;fill-opacity:1;stroke:none">comment: the curve is a bit noisy.</tspan></text>
 </svg>

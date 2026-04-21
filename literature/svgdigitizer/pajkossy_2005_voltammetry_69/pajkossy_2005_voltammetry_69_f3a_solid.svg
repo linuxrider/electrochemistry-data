@@ -4,8 +4,8 @@
    version="1.1"
    width="4959px"
    id="svg1"
-   sodipodi:docname="pajkossy_2004_voltammetry_69_f3a_solid.svg"
-   inkscape:version="1.4.3 (0d15f75, 2025-12-25)"
+   sodipodi:docname="pajkossy_2005_voltammetry_69_f3a_solid.svg"
+   inkscape:version="1.4.2 (f4327f4, 2025-05-13)"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -21,14 +21,14 @@
      inkscape:pagecheckerboard="0"
      inkscape:deskcolor="#d1d1d1"
      inkscape:zoom="0.46304972"
-     inkscape:cx="743.98058"
-     inkscape:cy="1062.5209"
-     inkscape:window-width="1920"
-     inkscape:window-height="1010"
-     inkscape:window-x="3449"
-     inkscape:window-y="-6"
+     inkscape:cx="745.06038"
+     inkscape:cy="1061.4411"
+     inkscape:window-width="2880"
+     inkscape:window-height="1694"
+     inkscape:window-x="-11"
+     inkscape:window-y="-11"
      inkscape:window-maximized="1"
-     inkscape:current-layer="svg1" />
+     inkscape:current-layer="g14" />
   <defs
      id="defs1" />
   <image
@@ -87,7 +87,7 @@
          sodipodi:role="line"
          id="tspan2"
          x="253.56674"
-         y="577.9726">j2: 1.0 A / m2</tspan></text>
+         y="577.9726">j2: 100 uA / cm2</tspan></text>
     <path
        style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:2;stroke-opacity:1"
        d="m 560.72542,566.84776 40.86853,85.22198"
@@ -108,7 +108,7 @@
          x="101.67587"
          y="1842.6377"
          sodipodi:role="line"
-         style="font-size:42.6667px">j1: -2.0 A / m2</tspan></text>
+         style="font-size:42.6667px">j1: -200 uA / cm2</tspan></text>
     <path
        style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:2;stroke-opacity:1"
        d="m 429.59483,1832.7478 105.81465,54.4914"
