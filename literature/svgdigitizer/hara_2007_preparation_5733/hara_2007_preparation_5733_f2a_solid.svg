@@ -5,7 +5,7 @@
    width="4959px"
    id="svg1"
    sodipodi:docname="hara_2007_preparation_5733_f2a_solid.svg"
-   inkscape:version="1.4 (86a8ad7, 2024-10-11)"
+   inkscape:version="1.4.2 (f4327f4, 2025-05-13)"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -21,14 +21,14 @@
      inkscape:pagecheckerboard="0"
      inkscape:deskcolor="#d1d1d1"
      inkscape:zoom="0.55782038"
-     inkscape:cx="1033.4868"
+     inkscape:cx="1034.3831"
      inkscape:cy="1320.3175"
      inkscape:window-width="2880"
-     inkscape:window-height="1514"
-     inkscape:window-x="2869"
+     inkscape:window-height="1694"
+     inkscape:window-x="-11"
      inkscape:window-y="-11"
      inkscape:window-maximized="1"
-     inkscape:current-layer="svg1" />
+     inkscape:current-layer="g4" />
   <defs
      id="defs1" />
   <image
@@ -82,7 +82,7 @@
          sodipodi:role="line"
          id="tspan2"
          x="385.30508"
-         y="574.97748">j2: 1.0 A / m2</tspan></text>
+         y="574.97748">j2: 100 uA / cm2</tspan></text>
     <path
        style="fill:none;stroke:#000000;stroke-width:0.5;stroke-opacity:1"
        d="m 689.51408,560.44027 57.14205,74.17263"
@@ -100,7 +100,7 @@
          x="349.67047"
          y="1523.0507"
          sodipodi:role="line"
-         style="font-size:42.6667px">j1: -2.0 A / m2</tspan></text>
+         style="font-size:42.6667px">j1: -0.2 uA / cm2</tspan></text>
     <path
        style="fill:none;stroke:#000000;stroke-width:0.5;stroke-opacity:1"
        d="m 672.7076,1509.4465 74.62079,86.4974"

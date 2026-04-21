@@ -10,7 +10,7 @@ source:
   techniques:
   - CV
 experimental:
-  tags: 
+  tags:
   - BCV
   instrumentation:
     - name: potentiostat
@@ -41,7 +41,7 @@ system:
           supplier: Merck
         purity:
           grade: suprapure
-    comment: All electorlytes were deaerated with argon prior and during each experiment.
+    comment: All electrolytes were deaerated with argon prior to and during each experiment.
   electrodes:
     - name: CE
       function: counter electrode
@@ -54,18 +54,18 @@ system:
       material: Pd
       crystallographicOrientation: '100'
       source:
-        supplier: Goodfellows
+        supplier: Goodfellow
         purity:
-          value: 99.999 
+          value: 99.999
           unit: pct
       preparationProcedure:
         description:
           - Pd wire etched in aqua regia, rinsed with Milli-Q water and dried.
-          - Forming of liquid beat by using an electron beam in a vacuum chamber.
+          - Forming of liquid bead by using an electron beam in a vacuum chamber.
           - Polishing of the bead to achieve the desired surface orientation.
           - Inductive annealed for 6h at 900 °C in 5N argon.
           - 15 min inductive annealing before each measurement.
           - details see https://doi.org/10.1016/j.electacta.2006.11.048.
-electrochemicalCell: 
+electrochemicalCell:
   type: three compartment glass cell
   cleaningProcedure: In a mixture of 1:1 hot H2SO4 and HNO3, followed by rinsing cycles with Milli-Q water.

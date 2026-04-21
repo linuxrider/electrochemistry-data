@@ -83,7 +83,7 @@
          sodipodi:role="line"
          id="tspan2"
          x="385.30508"
-         y="574.97748">j2: 0.4 A / m2</tspan></text>
+         y="574.97748">j2: 40 uA / cm2</tspan></text>
     <path
        style="fill:none;stroke:#000000;stroke-width:0.5;stroke-opacity:1"
        d="m 689.51408,560.44027 57.14205,74.17263"
@@ -120,7 +120,7 @@
          x="349.67047"
          y="1523.0507"
          sodipodi:role="line"
-         style="font-size:42.6667px">j1: -0.4 A / m2</tspan></text>
+         style="font-size:42.6667px">j1: -40 uA / cm2</tspan></text>
     <path
        style="fill:none;stroke:#000000;stroke-width:0.5;stroke-opacity:1"
        d="m 672.7076,1509.4465 74.62079,86.4974"
