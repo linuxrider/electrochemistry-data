@@ -6,11 +6,11 @@ curation:
       date: 2026-02-08
 source:
   url: https://doi.org/10.1016/S0022-0728(99)00048-0
-  citationKey: broekmann_1999_in_307
+  citationKey: broekmann_1999_in-situ_307
   techniques:
   - CV
 experimental:
-  tags: 
+  tags:
     - BCV
 system:
   type: electrochemical
@@ -33,7 +33,7 @@ system:
           unit: mM
         purity:
           grade: reagent grade
-    comment: Electorlyte was purges with argon several hours before experiment. 
+    comment: Electorlyte was purges with argon several hours before experiment.
   electrodes:
     - name: WE
       function: working electrode
