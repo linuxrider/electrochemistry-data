@@ -24,8 +24,10 @@ system:
       function: working electrode
       crystallographicOrientation: '111'
       type: highly oriented thin film
+      description: Au(111)-textured thin film on 50 µm thick sapphire sheet
       geometricElectrolyteContactArea:
-        unit: 0.196 / cm2
+        value: 0.196
+        unit: cm2
       material: Au
       preparationProcedure:
         description:
@@ -38,7 +40,7 @@ system:
         value: 100
       source:
         quality: ultrapure water
-        refinement: Millipore MilliQ
+        refinement: Millipore Milli-Q
       type: solvent
     - concentration:
         unit: mol / l
@@ -58,11 +60,11 @@ system:
     source:
       url: https://doi.org/10.1063/1.4922859
 source:
-  citationKey: schoenig_2023_entropic_5948
+  citationKey: schonig_2023_entropic_5948
   url: https://doi.org/10.1039/D2CP04680F
   figure: '1'
   curve: green
-  originalFilename: schoenig_2023_entropic_5948_f1_green.csv
+  originalFilename: schonig_2023_entropic_5948_f1_green.csv
 figureDescription:
   type: raw
   measurementType: CV
@@ -71,7 +73,7 @@ figureDescription:
     unit: mV / s
 dataDescription:
   dialect:
-    delimiters: ','
+    delimiter: ','
     decimal: '.'
     encoding: utf-8
     headerLines: 0
