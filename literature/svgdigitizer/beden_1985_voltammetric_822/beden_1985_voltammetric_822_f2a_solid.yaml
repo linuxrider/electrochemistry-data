@@ -6,7 +6,7 @@ curation:
       date: 2026-02-02
 source:
   url: https://doi.org/10.1016/0039-6028(85)90985-9
-  citationKey: beden_1985_a_822
+  citationKey: beden_1985_voltammetric_822
   techniques:
   - CV
 experimental:
@@ -14,7 +14,11 @@ experimental:
   - BCV
   instrumentation:
     - type: potentiostat
-      name: PGS 77 
+      name: PGS 77
+    - type: programmer
+      name: PAR 175
+    - type: recorder
+      name: LINSEIS LY 1700 
 system:
   type: electrochemical
   electrolyte:
@@ -58,8 +62,8 @@ system:
       geometricElectrolyteContactArea:
         value: 12.56
         unit: mm2
-      crystallographicOrientation: '111'
+      crystallographicOrientation: '100'
       preparationProcedure:
         description:
-          - Oriented surface polished with fine aluminum down to 0.05 µm.
+          - Oriented surface polished with fine alumina down to 0.05 µm.
           - Rinsed with ultrapure water and transfered protected by a water droplet.
