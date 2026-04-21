@@ -23,15 +23,13 @@ system:
         concentration:
           value: 0.1
           unit: mol / l
-        source:
-          supplier: Merck
         purity:
           grade: suprapur
       - name: N2
         type: gas
         purity:
           grade: 5N
-    ph: 
+    ph:
       value: 4
     temperature:
       value: 20
@@ -54,7 +52,7 @@ system:
           unit: mm
       preparationProcedure:
         description:
-        - High temperature annealing at about 1900°C in a nitrogen hydrogen atmosphere for 1min.
-        - Cool down in the gas stream for 2 min. 
+        - High temperature annealing at about 1900°C in a nitrogen-hydrogen atmosphere for 1 min.
+        - Cool down in the gas stream for 2 min.
         - Transferred to the electrochemical cell under protecting gas stream.
         - Hanging meniscus configuration.
