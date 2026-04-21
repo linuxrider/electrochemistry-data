@@ -4,6 +4,10 @@ curation:
       name: Valerie Link
       orcid: https://orcid.org/0009-0004-3341-1452
       date: 2026-01-11
+experimental:
+  instrumentation:
+    - name: PAR Model 273A
+      type: potentiostat
 source:
   url: https://doi.org/10.1016/S0022-0728(97)00208-8
   citationKey: ando_1997_situ_277
@@ -27,8 +31,6 @@ system:
         concentration:
           value: 0.05
           unit: mol / l
-        source:
-          supplier: Merck
         purity:
           grade: ultrahigh purity
       - name: N2
@@ -36,15 +38,25 @@ system:
     ph:
       value: 3
   electrodes:
+    - name: CE
+      function: counter electrode
+      material: Pt
+      shape:
+        type: wire
+    - name: REF
+      function: reference electrode
+      material: Pt
+      shape:
+        type: wire
     - name: WE
       function: working electrode
       type: single crystal
       material: Co
       purity:
-        grade: 5N
+        grade: 4N
       crystallographicOrientation: '0001'
       source:
         supplier: Mateck
       preparationProcedure:
         description:
-          - Surfaces of crystals were polished and metallographically finished with diamond paste.
+          - Surfaces of crystals were polished and metallographically finished with 0.25 µm diamond paste, and sonicated in trichloroethylene, acetone and finally pure water.
