@@ -65,7 +65,8 @@ This performs the following checks automatically:
 - Required sections present: `curation`, `source`, `system`
 - Source URL is a valid DOI
 - Electrolyte has `type` and `components`
-- Working electrode and reference electrode defined
+- Working electrode defined
+- Reference electrode metadata is only required when explicitly stated in the manuscript (or clearly attributable to the exact experiment); do not infer solely from plotted axis conversion labels
 - Curator has ORCID
 
 #### PDF Cross-Validation
@@ -101,6 +102,7 @@ Key checks to perform by reading the PDF experimental section:
    that its omission is acceptable. Add as VERIFY item.
 5. **Preparation procedure**: Verify the description matches the paper. Check
    that comments are complete sentences ending with a period.
+6. **Reference electrode policy**: If the figure axis is transformed (e.g., plotted vs RHE) but the manuscript does not explicitly define a reference electrode for that experiment, do not force a REF addition; raise as VERIFY/comment only.
 
 ### Step 5: Generate REVIEW.md Report
 
