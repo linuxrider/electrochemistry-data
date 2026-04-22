@@ -17,7 +17,7 @@ system:
       - name: water
         type: solvent
         source:
-          refinement: Millipore-Q
+          refinement: Milli-Q
         purity:
           grade: ultrapure
       - name: HClO4
@@ -48,4 +48,4 @@ system:
           - Made out of a molten ball formed at the end of a Ir wire in a hydrogen-oxygen flame.
           - Mechanical polishing of the '111' surface.
           - For an ordered and clean surface a flame-annealing-quenching technique was used.
-          - details see https://doi.org/10.1021/jp991112j
+          - The detailed procedure is described in the source publication.
