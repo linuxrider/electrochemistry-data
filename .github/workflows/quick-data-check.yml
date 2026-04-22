@@ -22,4 +22,4 @@ jobs:
         with: { pixi-version: v0.67.1 }
       - name: validate new entries
         shell: pixi run bash -e {0}
-        run: pixi run -e dev validate-new-input --base_ref origin/${{ github.base_ref }}
+        run: pixi run -e dev validate-new-input -- origin/${{ github.base_ref }}
