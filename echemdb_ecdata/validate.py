@@ -581,12 +581,12 @@ def validate_identifiers():
 
 def validate_new_input(base_ref="origin/main"):
     r"""
-    Validate only newly added entries in ``literature/`` compared to a base branch.
+    Validate added or modified entries in ``literature/`` compared to a base branch.
 
-    Uses ``git diff`` to find directories added in the current branch relative
+    Uses ``git diff`` to find directories added or modified in the current branch relative
     to ``base_ref``, then runs schema and filename validation on those directories only.
 
-    Also validates the bibliography (cross-cutting, cannot be scoped to new entries).
+    Also validates the bibliography (cross-cutting, cannot be scoped to changed entries).
 
     Parameters
     ----------
@@ -599,26 +599,26 @@ def validate_new_input(base_ref="origin/main"):
 
     """
     result = subprocess.run(
-        ["git", "diff", "--name-only", "--diff-filter=A", f"{base_ref}...HEAD"],
+        ["git", "diff", "--name-only", "--diff-filter=AM", f"{base_ref}...HEAD"],
         capture_output=True,
         text=True,
         check=True,
     )
-    added_files = result.stdout.splitlines()
+    changed_files = result.stdout.splitlines()
 
-    def _new_dirs(prefix):
+    def _changed_dirs(prefix):
         dirs = set()
-        for f in added_files:
+        for f in changed_files:
             parts = Path(f).parts
             if len(parts) >= 3 and f.startswith(prefix):
                 dirs.add(str(Path(parts[0]) / parts[1] / parts[2]))
         return sorted(dirs)
 
-    svg_dirs = _new_dirs("literature/svgdigitizer/")
-    src_dirs = _new_dirs("literature/source_data/")
+    svg_dirs = _changed_dirs("literature/svgdigitizer/")
+    src_dirs = _changed_dirs("literature/source_data/")
 
     if not svg_dirs and not src_dirs:
-        print("No new literature entries found.")
+        print("No changed literature entries found.")
         return
 
     for data_dir in svg_dirs:
