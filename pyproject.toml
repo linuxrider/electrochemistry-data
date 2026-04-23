@@ -41,7 +41,7 @@ pixi-kernel = ">=0.7.1,<0.8"
 ipykernel = ">=7.2.0,<8"
 pip = ">=26.0.1,<27"
 jupyterlab = ">=4.5.4,<5"
-jupytext = ">=1.19.1,<2"
+jupytext = ">=1.19.0,<2"
 
 [tool.pixi.pypi-dependencies]
 echemdb_ecdata = { path = ".", editable = true }
